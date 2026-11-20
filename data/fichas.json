@@ -103,7 +103,22 @@
       "area": "Matemáticas",
       "titulo": "Sumas y restas (3º)",
       "enlace": "ficha_ejemplo.html",
-      "tipo": "Pública"
+      "tipo": "Pública",
+      "unidad": "Sumas"
+    },
+    {
+      "curso": "3º",
+      "area": "Matemáticas",
+      "unidad": "Sumas 2",
+      "titulo": "aedbg",
+      "enlace": "abvd"
+    },
+    {
+      "curso": "3º",
+      "area": "Matemáticas",
+      "unidad": "Restas",
+      "titulo": "sdagvasd",
+      "enlace": "dbvdf"
     }
   ]
 }
