@@ -2,7 +2,7 @@
 # Cambia TU_USUARIO y el nombre del repositorio por los tuyos.
 backend:
   name: github
-  repo: mariocb1/colesanroque
+  repo: TU_USUARIO/colegio-san-roque
   branch: main
 
 media_folder: assets/uploads
@@ -73,7 +73,21 @@ collections:
               - {label: "Etiqueta", name: etiqueta, widget: string, required: false}
               - {label: "Emoji (si no hay foto)", name: emoji, widget: string, required: false}
               - {label: "Foto (opcional)", name: imagen, widget: image, required: false}
-              - {label: "Enlace (opcional)", name: enlace, widget: string, required: false}
+              - {label: "Texto completo (separa párrafos con una línea en blanco)", name: texto, widget: text, required: false}
+              - label: "Galería de fotos (opcional)"
+                name: galeria
+                widget: list
+                required: false
+                fields:
+                  - {label: "Foto", name: foto, widget: image}
+              - label: "Enlaces a otras webs (opcional)"
+                name: enlaces
+                widget: list
+                required: false
+                fields:
+                  - {label: "Texto del enlace", name: texto, widget: string}
+                  - {label: "Dirección (URL)", name: url, widget: string}
+              - {label: "Enlace externo principal (opcional, botón \"Más información\")", name: enlace, widget: string, required: false}
               - label: "Estado"
                 name: estado
                 widget: select
@@ -94,6 +108,19 @@ collections:
               - {label: "Título", name: titulo, widget: string}
               - {label: "Resumen (para la tarjeta)", name: resumen, widget: text, required: false}
               - {label: "Texto completo (separa párrafos con una línea en blanco)", name: texto, widget: text}
+              - label: "Galería de fotos (opcional)"
+                name: galeria
+                widget: list
+                required: false
+                fields:
+                  - {label: "Foto", name: foto, widget: image}
+              - label: "Enlaces a otras webs (opcional)"
+                name: enlaces
+                widget: list
+                required: false
+                fields:
+                  - {label: "Texto del enlace", name: texto, widget: string}
+                  - {label: "Dirección (URL)", name: url, widget: string}
               - {label: "Etiqueta", name: etiqueta, widget: string, required: false}
               - {label: "Emoji (si no hay foto)", name: emoji, widget: string, required: false}
               - {label: "Foto (opcional)", name: imagen, widget: image, required: false}
@@ -151,6 +178,7 @@ collections:
                 name: etapa
                 widget: select
                 options: ["Equipo directivo", "Infantil", "Primaria", "Especialistas", "Apoyo"]
+              - {label: "Foto (opcional)", name: foto, widget: image, required: false}
 
       - name: fichas
         label: "Recursos (fichas)"

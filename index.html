@@ -31,7 +31,7 @@ section{padding:50px 0}.azul{background:var(--cielo)}.mor{background:var(--morad
 .etq{font-size:.82rem;color:var(--morado);font-weight:700}.mas{text-align:center;margin-top:26px}
 .card{background:#fff;border-radius:14px;padding:18px;border:2px solid var(--noche);color:var(--tinta)}.card h3{color:var(--morado)}
 button.card{text-align:left;font:inherit;cursor:pointer}button.card:hover{background:#f4eefb}
-.doc{text-align:center}.doc i{display:grid;place-items:center;width:70px;height:70px;margin:0 auto 8px;border-radius:50%;background:var(--morado);color:#fff;font:700 1.5rem Georgia,serif}
+.doc{text-align:center}.doc img.foto{width:70px;height:70px;border-radius:50%;object-fit:cover;margin:0 auto 8px;display:block}.doc i{display:grid;place-items:center;width:70px;height:70px;margin:0 auto 8px;border-radius:50%;background:var(--morado);color:#fff;font:700 1.5rem Georgia,serif}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
 .chips button{font:700 .92rem "Nunito","Segoe UI",sans-serif;border:2px solid var(--noche);background:transparent;color:var(--noche);padding:6px 14px;border-radius:22px;cursor:pointer}
 .chips button[aria-pressed=true]{background:var(--noche);color:#fff}
@@ -48,6 +48,7 @@ dialog{border:3px solid var(--noche);border-radius:16px;max-width:480px;padding:
 footer{background:var(--noche);color:#dfe9f7;padding:28px 0;font-size:.95rem}footer img{height:60px;float:left;margin-right:16px}
 @media(max-width:760px){.hero .wrap{grid-template-columns:1fr}nav{margin:0}}
 .hero-cta{text-align:center;margin-top:26px}.det-img{width:100%;max-width:640px;border-radius:14px;display:block;margin:16px 0}#det p{max-width:65ch}
+.galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin:12px 0 20px}.galeria img{width:100%;height:150px;object-fit:cover;border-radius:10px;display:block}
 </style></head><body>
 <header><div class="wrap"><img src="assets/escudo.jpg" alt="Escudo del CEIP San Roque"><b>CEIP San Roque</b>
 <nav aria-label="Principal"><a href="#inicio">Inicio</a><a href="#novedades">Novedades</a><a href="#blog">Blog</a><a href="#programas">Programas</a><a href="#servicios">Servicios</a><a href="#docentes">Docentes</a><a href="#recursos">Recursos</a><a href="#familias">Familias</a></nav></div></header>
@@ -55,8 +56,8 @@ footer{background:var(--noche);color:#dfe9f7;padding:28px 0;font-size:.95rem}foo
 <div id="home">
 <div class="hero" id="inicio"><div class="wrap"><div><h1 id="lema"></h1><p id="sub"></p></div><img src="assets/hero.png" alt="San Roque niño con su perro delante del colegio"></div><div class="hero-cta"><a class="btn" href="#recursos">Ir a los recursos</a></div></div>
 <div class="wrap"><div class="tablon"><div class="asoma"><img src="assets/roque.png" alt=""></div><h2 style="margin-top:14px">Avisos y plazos</h2><div id="avisos"></div></div></div>
-<section id="novedades"><div class="wrap"><h2>Novedades</h2><div class="grid" id="nov"></div><p class="mas"><a class="btn" href="#noticias">Todas las noticias</a></p></div></section>
-<section class="azul" id="blog"><div class="wrap"><h2>Del blog de aula</h2><div class="grid" id="bl"></div><p class="mas"><a class="btn o" href="#entradas">Todas las entradas</a></p></div></section>
+<section id="novedades"><div class="wrap"><h2>Novedades</h2><div class="grid" id="nov"></div><p class="mas" id="mas-noticias" hidden><a class="btn" href="#noticias">Todas las noticias</a></p></div></section>
+<section class="azul" id="blog"><div class="wrap"><h2>Del blog de aula</h2><div class="grid" id="bl"></div><p class="mas" id="mas-entradas" hidden><a class="btn o" href="#entradas">Todas las entradas</a></p></div></section>
 <section id="programas"><div class="wrap"><h2>Planes y programas</h2><div id="prog"></div></div></section>
 <section class="azul" id="servicios"><div class="wrap"><h2>Servicios</h2><div class="grid" id="serv"></div></div></section>
 <section id="docentes"><div class="wrap"><h2>Equipo docente</h2><div class="chips" id="etapas"></div><div class="grid" id="doc"></div></div></section>
@@ -80,56 +81,61 @@ const fd=f=>f?new Date(f+"T12:00").toLocaleDateString("es-ES",{day:"numeric",mon
 const L=x=>(x&&x.items)||[];
 let D={};
 
-// Lee un JSON del panel (sin caché para que se vean los cambios al momento)
 const pide=n=>fetch("data/"+n+".json?v="+Date.now()).then(r=>r.json());
 
-// Noticias y entradas visibles: no borradores y ya publicadas (fecha <= hoy)
 const visibles=lista=>lista.filter(x=>x.estado!="Borrador"&&x.fecha<=HOY).sort((a,b)=>b.fecha.localeCompare(a.fecha));
 const enPortada=lista=>lista.filter(x=>x.estado=="Portada");
 
-// Miniatura: foto si la hay, si no el emoji
 const miniatura=n=>n.imagen?`<img src="${H(n.imagen)}" alt="">`:H(n.emoji||"⭐");
 
-// Tarjeta de portada
 const tarjeta=(n,enlace)=>`<article class="post"><div class="ph">${miniatura(n)}</div><div class="t"><span class="etq">${H(n.etiqueta)} · ${fd(n.fecha)}</span><h3>${enlace?`<a href="${H(enlace)}">${H(n.titulo)}</a>`:H(n.titulo)}</h3><p>${H(n.resumen||(n.texto||"").slice(0,140))}</p></div></article>`;
 
-// Página de archivo con buscador y filtros por etiqueta
-function archivo(id,items,esBlog){
+// tipo: "noticia" o "entrada"
+const listaDe=tipo=>L(D[tipo=="noticia"?"noticias":"blog"]);
+
+function archivo(id,items,tipo){
   const p=$(id),ch=p.querySelector(".chips"),q=p.querySelector("input"),Lst=p.querySelector(".lista");let et="Todas";
   const tags=["Todas",...new Set(items.map(x=>x.etiqueta).filter(Boolean))];
-  const pinta=()=>{Lst.innerHTML=items.filter(x=>(et=="Todas"||x.etiqueta==et)&&(x.titulo+(x.resumen||"")+(x.texto||"")).toLowerCase().includes(q.value.toLowerCase())).map(x=>{
-    const t=esBlog?`<a href="#entrada=${L(D.blog).indexOf(x)}">${H(x.titulo)}</a>`:H(x.titulo);
-    return `<div class="row"><span class="fecha">${fd(x.fecha)}</span><div><b>${H(x.emoji)} ${t}</b>${H(x.resumen||"")} <span class="etq">${H(x.etiqueta)}</span></div></div>`;
-  }).join("")||"<p>No hay resultados.</p>"};
+  const pinta=()=>{Lst.innerHTML=items.filter(x=>(et=="Todas"||x.etiqueta==et)&&(x.titulo+(x.resumen||"")+(x.texto||"")).toLowerCase().includes(q.value.toLowerCase())).map(x=>
+    `<div class="row"><span class="fecha">${fd(x.fecha)}</span><div><b>${H(x.emoji)} <a href="#${tipo}=${listaDe(tipo).indexOf(x)}">${H(x.titulo)}</a></b>${H(x.resumen||"")} <span class="etq">${H(x.etiqueta)}</span></div></div>`
+  ).join("")||"<p>No hay resultados.</p>"};
   ch.innerHTML="";
   tags.forEach(t=>{const b=document.createElement("button");b.textContent=t;b.setAttribute("aria-pressed",t==et);
     b.onclick=()=>{et=t;ch.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));pinta()};ch.append(b)});
   q.oninput=pinta;pinta();
 }
 
-// Botones de filtro (etapas, cursos)
 function chips(el,vals,fn){
   el.innerHTML="";
   vals.forEach((v,i)=>{const b=document.createElement("button");b.textContent=v;b.setAttribute("aria-pressed","false");
     b.onclick=()=>{el.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));fn(v)};el.append(b);if(i==0)b.click()});
 }
 
-// Entrada completa del blog
-function mostrarEntrada(i){
-  const n=L(D.blog)[i];
-  if(!n||n.estado=="Borrador"||n.fecha>HOY){$("#det").innerHTML="<p>Esta entrada no está disponible.</p>";return}
-  $("#det").innerHTML=`<p class="etq">${H(n.etiqueta)} · ${fd(n.fecha)}</p><h2>${H(n.emoji)} ${H(n.titulo)}</h2>${n.imagen?`<img class="det-img" src="${H(n.imagen)}" alt="">`:""}${(n.texto||"").split(/\n\s*\n/).filter(p=>p.trim()).map(p=>`<p>${H(p.trim())}</p>`).join("")}`;
+// Página completa de una noticia o entrada: texto, galería y enlaces
+function mostrarDetalle(tipo,i){
+  const n=listaDe(tipo)[i];
+  if(!n||n.estado=="Borrador"||n.fecha>HOY){$("#det").innerHTML="<p>Esta página no está disponible.</p>";return}
+  const parrafos=t=>(t||"").split(/\n\s*\n/).filter(p=>p.trim()).map(p=>`<p>${H(p.trim())}</p>`).join("");
+  const galeria=(n.galeria||[]).filter(g=>g&&g.foto).map(g=>`<a href="${H(g.foto)}" target="_blank" rel="noopener"><img src="${H(g.foto)}" alt=""></a>`).join("");
+  const enlaces=(n.enlaces||[]).filter(e=>e&&e.url).map(e=>`<li><a href="${H(e.url)}" target="_blank" rel="noopener">${H(e.texto||e.url)}</a></li>`).join("");
+  $("#det").innerHTML=`<p class="etq">${H(n.etiqueta)} · ${fd(n.fecha)}</p>
+    <h2>${H(n.emoji)} ${H(n.titulo)}</h2>
+    ${n.imagen?`<img class="det-img" src="${H(n.imagen)}" alt="">`:""}
+    ${parrafos(n.texto)||parrafos(n.resumen)}
+    ${galeria?`<h3>Galería</h3><div class="galeria">${galeria}</div>`:""}
+    ${enlaces?`<h3>Enlaces de interés</h3><ul>${enlaces}</ul>`:""}
+    ${n.enlace?`<p><a class="btn" href="${H(n.enlace)}" target="_blank" rel="noopener">Más información</a></p>`:""}`;
 }
 
-// Cambio entre inicio, archivos y entradas según la dirección (#...)
 function route(){
   const h=decodeURIComponent(location.hash.slice(1));
-  const det=h.startsWith("entrada="), ar=h=="noticias"||h=="entradas";
-  $("#home").hidden=ar||det;
+  const m=h.match(/^(noticia|entrada)=(\d+)$/);
+  const ar=h=="noticias"||h=="entradas";
+  $("#home").hidden=ar||!!m;
   $("#p-noticias").hidden=h!="noticias";
   $("#p-entradas").hidden=h!="entradas";
-  $("#p-detalle").hidden=!det;
-  if(det){mostrarEntrada(+h.slice(8));scrollTo(0,0)}
+  $("#p-detalle").hidden=!m;
+  if(m){mostrarDetalle(m[1],+m[2]);scrollTo(0,0)}
   else if(ar)scrollTo(0,0);
   else if(h)setTimeout(()=>document.getElementById(h)?.scrollIntoView(),30);
 }
@@ -145,17 +151,19 @@ cargar().then(()=>{
   $("#lema").textContent=A.lema;$("#sub").textContent=A.subtitulo;
   $("#pie").textContent=`${A.direccion} · ${A.telefono} · ${A.email}`;
 
-  // Cuántas tarjetas se ven en portada: la configuración vigente hoy
   const pr=L(D.portada).filter(r=>r.desde<=HOY).sort((a,b)=>a.desde.localeCompare(b.desde)).pop()||{noticias:3,entradas:3};
 
   const N=visibles(L(D.noticias)), B=visibles(L(D.blog));
-  $("#nov").innerHTML=enPortada(N).slice(0,+pr.noticias).map(n=>tarjeta(n,n.enlace)).join("");
-  $("#bl").innerHTML=enPortada(B).slice(0,+pr.entradas).map(n=>tarjeta(n,`#entrada=${L(D.blog).indexOf(n)}`)).join("");
+  const portN=enPortada(N), portB=enPortada(B);
+  $("#nov").innerHTML=portN.slice(0,+pr.noticias).map(n=>tarjeta(n,`#noticia=${listaDe("noticia").indexOf(n)}`)).join("");
+  $("#mas-noticias").hidden=portN.length<=+pr.noticias;
+  $("#bl").innerHTML=portB.slice(0,+pr.entradas).map(n=>tarjeta(n,`#entrada=${listaDe("entrada").indexOf(n)}`)).join("");
+  $("#mas-entradas").hidden=portB.length<=+pr.entradas;
 
   $("#avisos").innerHTML=L(D.avisos).filter(a=>a.fecha_limite>=HOY).sort((a,b)=>a.fecha_limite.localeCompare(b.fecha_limite)).map(a=>`<div class="aviso"><span class="fecha ${a.urgente?"u":""}">${fd(a.fecha_limite)}</span><div>${a.enlace?`<a href="${H(a.enlace)}">${H(a.texto)}</a>`:H(a.texto)}</div></div>`).join("")||"<p>Ahora mismo no hay avisos.</p>";
 
-  archivo("#p-noticias",N,false);
-  archivo("#p-entradas",B,true);
+  archivo("#p-noticias",N,"noticia");
+  archivo("#p-entradas",B,"entrada");
 
   const P=L(D.programas), gr=[...new Set(P.map(p=>p.grupo))];
   $("#prog").innerHTML=gr.map(g=>`<h3>${H(g)}</h3><div class="grid" style="margin-bottom:26px">${P.map((p,i)=>({p,i})).filter(o=>o.p.grupo==g).map(o=>`<button class="card" data-p="${o.i}"><b style="font-size:1.6rem">${H(o.p.emoji)}</b><h3>${H(o.p.nombre)}</h3>${H(o.p.resumen)}<br><u>Saber más</u></button>`).join("")}</div>`).join("");
@@ -164,7 +172,7 @@ cargar().then(()=>{
   $("#serv").innerHTML=L(D.servicios).map(s=>`<div class="card"><b style="font-size:1.6rem">${H(s.emoji)}</b><h3>${H(s.nombre)}</h3>${H(s.descripcion)}</div>`).join("");
 
   const DOC=L(D.docentes);
-  const dp=e=>$("#doc").innerHTML=DOC.filter(d=>e=="Todo el equipo"||d.etapa==e).map(d=>`<div class="card doc"><i>${H(d.nombre[0])}</i><b>${H(d.nombre)}</b><br>${H(d.cargo)}</div>`).join("");
+  const dp=e=>$("#doc").innerHTML=DOC.filter(d=>e=="Todo el equipo"||d.etapa==e).map(d=>`<div class="card doc">${d.foto?`<img class="foto" src="${H(d.foto)}" alt="">`:`<i>${H(d.nombre[0])}</i>`}<b>${H(d.nombre)}</b><br>${H(d.cargo)}</div>`).join("");
   chips($("#etapas"),["Todo el equipo",...new Set(DOC.map(d=>d.etapa))],dp);
 
   const FI=L(D.fichas), cu=[...new Set(FI.map(f=>f.curso))];
