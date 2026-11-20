@@ -2,7 +2,7 @@
 # Cambia TU_USUARIO y el nombre del repositorio por los tuyos.
 backend:
   name: github
-  repo: TU_USUARIO/colegio-san-roque
+  repo: mariocb1/colegio-san-roque
   branch: main
 
 media_folder: assets/uploads
