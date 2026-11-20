@@ -28,7 +28,8 @@
     {
       "urgente": false,
       "fecha_limite": "2026-11-27",
-      "texto": "prueba no urgente"
+      "texto": "prueba no urgente",
+      "detalle": "dfbdfbdfbdb"
     }
   ]
 }
