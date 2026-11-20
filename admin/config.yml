@@ -1,5 +1,5 @@
 # Configuración del panel de edición (Decap CMS).
-# Cambia TU_USUARIO y el nombre del repositorio por los tuyos.
+
 backend:
   name: github
   repo: mariocb1/colesanroque
@@ -55,7 +55,8 @@ collections:
               - {label: "Fecha límite", name: fecha_limite, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
               - {label: "Texto", name: texto, widget: string}
               - {label: "Urgente", name: urgente, widget: boolean, default: false}
-              - {label: "Enlace (opcional)", name: enlace, widget: string, required: false}
+              - {label: "Página de detalle (opcional): texto completo", name: detalle, widget: text, required: false}
+              - {label: "Enlace externo (opcional)", name: enlace, widget: string, required: false}
 
       - name: noticias
         label: "Noticias"

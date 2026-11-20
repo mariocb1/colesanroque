@@ -91,7 +91,7 @@ const miniatura=n=>n.imagen?`<img src="${H(n.imagen)}" alt="">`:H(n.emoji||"⭐"
 const tarjeta=(n,enlace)=>`<article class="post"><div class="ph">${miniatura(n)}</div><div class="t"><span class="etq">${H(n.etiqueta)} · ${fd(n.fecha)}</span><h3>${enlace?`<a href="${H(enlace)}">${H(n.titulo)}</a>`:H(n.titulo)}</h3><p>${H(n.resumen||(n.texto||"").slice(0,140))}</p></div></article>`;
 
 // tipo: "noticia" o "entrada"
-const listaDe=tipo=>L(D[tipo=="noticia"?"noticias":"blog"]);
+const listaDe=tipo=>L(D[tipo=="noticia"?"noticias":tipo=="entrada"?"blog":"avisos"]);
 
 function archivo(id,items,tipo){
   const p=$(id),ch=p.querySelector(".chips"),q=p.querySelector("input"),Lst=p.querySelector(".lista");let et="Todas";
@@ -113,7 +113,8 @@ function chips(el,vals,fn){
 
 // Página completa de una noticia o entrada: texto, galería y enlaces
 function mostrarDetalle(tipo,i){
-  const n=listaDe(tipo)[i];
+  let n=listaDe(tipo)[i];
+  if(n&&tipo=="aviso") n={titulo:n.texto,fecha:n.fecha_limite,etiqueta:"Aviso",estado:"Portada",texto:n.detalle,enlace:n.enlace,emoji:"📢",galeria:[],enlaces:[]};
   if(!n||n.estado=="Borrador"||n.fecha>HOY){$("#det").innerHTML="<p>Esta página no está disponible.</p>";return}
   const parrafos=t=>(t||"").split(/\n\s*\n/).filter(p=>p.trim()).map(p=>`<p>${H(p.trim())}</p>`).join("");
   const galeria=(n.galeria||[]).filter(g=>g&&g.foto).map(g=>`<a href="${H(g.foto)}" target="_blank" rel="noopener"><img src="${H(g.foto)}" alt=""></a>`).join("");
@@ -129,7 +130,7 @@ function mostrarDetalle(tipo,i){
 
 function route(){
   const h=decodeURIComponent(location.hash.slice(1));
-  const m=h.match(/^(noticia|entrada)=(\d+)$/);
+  const m=h.match(/^(noticia|entrada|aviso)=(\d+)$/);
   const ar=h=="noticias"||h=="entradas";
   $("#home").hidden=ar||!!m;
   $("#p-noticias").hidden=h!="noticias";
@@ -160,7 +161,9 @@ cargar().then(()=>{
   $("#bl").innerHTML=portB.slice(0,+pr.entradas).map(n=>tarjeta(n,`#entrada=${listaDe("entrada").indexOf(n)}`)).join("");
   $("#mas-entradas").hidden=portB.length<=+pr.entradas;
 
-  $("#avisos").innerHTML=L(D.avisos).filter(a=>a.fecha_limite>=HOY).sort((a,b)=>a.fecha_limite.localeCompare(b.fecha_limite)).map(a=>`<div class="aviso"><span class="fecha ${a.urgente?"u":""}">${fd(a.fecha_limite)}</span><div>${a.enlace?`<a href="${H(a.enlace)}">${H(a.texto)}</a>`:H(a.texto)}</div></div>`).join("")||"<p>Ahora mismo no hay avisos.</p>";
+  $("#avisos").innerHTML=L(D.avisos).filter(a=>a.fecha_limite>=HOY).sort((a,b)=>a.fecha_limite.localeCompare(b.fecha_limite)).map(a=>{
+    const txt=a.detalle?`<a href="#aviso=${L(D.avisos).indexOf(a)}">${H(a.texto)}</a>`:a.enlace?`<a href="${H(a.enlace)}" target="_blank" rel="noopener">${H(a.texto)}</a>`:H(a.texto);
+    return `<div class="aviso"><span class="fecha ${a.urgente?"u":""}">${fd(a.fecha_limite)}</span><div>${txt}</div></div>`}).join("")||"<p>Ahora mismo no hay avisos.</p>";
 
   archivo("#p-noticias",N,"noticia");
   archivo("#p-entradas",B,"entrada");
