@@ -78,7 +78,8 @@ footer{background:var(--noche);color:#dfe9f7;padding:28px 0;font-size:.95rem}foo
 <script>
 const $=s=>document.querySelector(s);
 const H=t=>String(t??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const HOY=new URLSearchParams(location.search).get("hoy")||new Date().toISOString().slice(0,10);
+const ahora=new Date();
+const HOY=new URLSearchParams(location.search).get("hoy")||`${ahora.getFullYear()}-${String(ahora.getMonth()+1).padStart(2,"0")}-${String(ahora.getDate()).padStart(2,"0")}`;
 const fd=f=>f?new Date(f+"T12:00").toLocaleDateString("es-ES",{day:"numeric",month:"short",year:"numeric"}):"";
 const L=x=>(x&&x.items)||[];
 let D={};
