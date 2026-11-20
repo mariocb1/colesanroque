@@ -27,6 +27,7 @@ collections:
           - {label: "Libro del mes", name: libro_mes, widget: text}
           - {label: "Calendario escolar (texto)", name: calendario_texto, widget: text}
           - {label: "Buzón de sugerencias (texto)", name: buzon_texto, widget: text}
+          - {label: "Calendario de Google: dirección de inserción (opcional)", name: calendario_google, widget: string, required: false}
 
       - name: portada
         label: "Portada: cuántas se ven"
@@ -196,6 +197,10 @@ collections:
                 widget: select
                 options: ["3 años", "4 años", "5 años", "1º", "2º", "3º", "4º", "5º", "6º"]
               - {label: "Asignatura o área", name: area, widget: string}
-              - {label: "Temática o unidad (opcional)", name: unidad, widget: string, required: false}
+              - label: "Tema (opcional)"
+                name: unidad
+                widget: select
+                required: false
+                options: ["Tema 1", "Tema 2", "Tema 3", "Tema 4", "Tema 5", "Tema 6", "Tema 7", "Tema 8", "Tema 9", "Tema 10", "Tema 11", "Tema 12"]
               - {label: "Título", name: titulo, widget: string}
               - {label: "Enlace al archivo o página", name: enlace, widget: string}

@@ -47,7 +47,7 @@ button.card{text-align:left;font:inherit;cursor:pointer}button.card:hover{backgr
 dialog{border:3px solid var(--noche);border-radius:16px;max-width:480px;padding:22px}dialog::backdrop{background:#0f3f7388}
 footer{background:var(--noche);color:#dfe9f7;padding:28px 0;font-size:.95rem}footer img{height:60px;float:left;margin-right:16px}
 @media(max-width:760px){.hero .wrap{grid-template-columns:1fr}nav{margin:0}}
-.hero-cta{text-align:center;margin-top:26px}.asig{color:var(--morado);margin:28px 0 8px}.unidad{background:#fff;color:var(--tinta);border-radius:12px;padding:12px 16px;margin:10px 0;border:2px solid var(--cielo)}.unidad h4{margin:0 0 6px;color:var(--noche);font-size:1.05rem}.ficha{display:block;padding:6px 0;font-weight:700}.det-img{width:100%;max-width:640px;border-radius:14px;display:block;margin:16px 0}#det p{max-width:65ch}
+.hero-cta{text-align:center;margin-top:26px}.asig{color:var(--morado);margin:28px 0 8px}.unidad{background:#fff;color:var(--tinta);border-radius:12px;padding:12px 16px;margin:10px 0;border:2px solid var(--cielo)}.unidad h4{margin:0 0 6px;color:var(--noche);font-size:1.05rem}.ficha{display:block;padding:6px 0;font-weight:700}.card.cal{grid-column:1/-1}.cal iframe{width:100%;height:440px;border:0;border-radius:10px;margin-top:8px}.det-img{width:100%;max-width:640px;border-radius:14px;display:block;margin:16px 0}#det p{max-width:65ch}
 .galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin:12px 0 20px}.galeria img{width:100%;height:150px;object-fit:cover;border-radius:10px;display:block}
 </style></head><body>
 <header><div class="wrap"><img src="assets/escudo.jpg" alt="Escudo del CEIP San Roque"><b>CEIP San Roque</b>
@@ -188,7 +188,7 @@ cargar().then(()=>{
     const asig=[...new Set(fc.map(f=>f.area))];
     $("#rec-contenido").innerHTML=asig.map(a=>{
       const fa=fc.filter(f=>f.area==a);
-      const unis=[...new Set(fa.map(f=>f.unidad||"General"))];
+      const unis=[...new Set(fa.map(f=>f.unidad||"General"))].sort((x,y)=>x=="General"?1:y=="General"?-1:x.localeCompare(y,"es",{numeric:true}));
       return `<h3 class="asig">${H(a)}</h3>`+unis.map(u=>
         `<div class="unidad"><h4>${H(u)}</h4>${fa.filter(f=>(f.unidad||"General")==u).map(f=>`<a class="ficha" href="${H(f.enlace)}" target="_blank" rel="noopener">${H(f.titulo)}</a>`).join("")}</div>`
       ).join("");
@@ -196,7 +196,13 @@ cargar().then(()=>{
   };
   chips($("#cursos"),cu,pintaCurso);
 
-  $("#fam").innerHTML=[["🍽️","Menú del comedor",A.menu_comedor],["📖","Libro del mes de Roque",A.libro_mes],["🗓️","Calendario escolar",A.calendario_texto],["💬","Buzón de sugerencias",A.buzon_texto]].map(c=>`<div class="card"><b style="font-size:1.6rem">${c[0]}</b><h3>${c[1]}</h3>${H(c[2])}</div>`).join("");
+  // Acepta la dirección sola o el código <iframe> completo, en cualquiera de los dos campos
+  const extraeSrc=t=>{const m=(t||"").match(/src="([^"]+)"/);return m?m[1]:(t||"").trim()};
+  const calRaw=A.calendario_google||(/<iframe/i.test(A.calendario_texto||"")?A.calendario_texto:"");
+  const calUrl=calRaw?extraeSrc(calRaw):"";
+  const famItems=[["🍽️","Menú del comedor",A.menu_comedor],["📖","Libro del mes de Roque",A.libro_mes],["🗓️","Calendario escolar",A.calendario_texto],["💬","Buzón de sugerencias",A.buzon_texto]].filter(c=>!(calUrl&&c[1]=="Calendario escolar"));
+  const calendario=calUrl?`<div class="card cal"><h3>🗓️ Calendario escolar</h3><iframe src="${H(calUrl)}" title="Calendario escolar" loading="lazy"></iframe></div>`:"";
+  $("#fam").innerHTML=famItems.map(c=>`<div class="card"><b style="font-size:1.6rem">${c[0]}</b><h3>${c[1]}</h3>${H(c[2])}</div>`).join("")+calendario;
 
   route();
 });

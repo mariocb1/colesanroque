@@ -1,14 +1,19 @@
 {
   "items": [
     {
-      "noticias": 5,
-      "entradas": 5,
-      "desde": "2026-11-20"
+      "desde": "2026-09-01",
+      "noticias": 3,
+      "entradas": 3
     },
     {
-      "noticias": 3,
-      "entradas": 3,
-      "desde": "2026-11-21"
+      "desde": "2026-11-27",
+      "noticias": 4,
+      "entradas": 3
+    },
+    {
+      "desde": "2026-12-04",
+      "noticias": 2,
+      "entradas": 3
     }
   ]
 }
