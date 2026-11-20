@@ -2,7 +2,7 @@
 # Cambia TU_USUARIO y el nombre del repositorio por los tuyos.
 backend:
   name: github
-  repo: repo: mariocb1/colesanroque
+  repo: mariocb1/colesanroque
   branch: main
 
 media_folder: assets/uploads
