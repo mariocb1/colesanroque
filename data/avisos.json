@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "fecha_limite": "2026-11-30",
+      "texto": "Entrega de la autorización de la excursión de 4º",
+      "urgente": true,
+      "enlace": ""
+    },
+    {
+      "fecha_limite": "2026-12-03",
+      "texto": "Reunión de familias de 3 años, 17:00 h, aula de usos múltiples",
+      "urgente": false,
+      "enlace": ""
+    },
+    {
+      "fecha_limite": "2026-12-10",
+      "texto": "Plazo para apuntarse al concurso de postales navideñas",
+      "urgente": false,
+      "enlace": ""
+    },
+    {
+      "fecha_limite": "2026-12-18",
+      "texto": "Último día de clase del trimestre: salida a las 14:00",
+      "urgente": false,
+      "enlace": ""
+    }
+  ]
+}

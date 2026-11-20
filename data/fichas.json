@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "curso": "3 años",
+      "area": "Crecimiento en armonía",
+      "titulo": "Ficha de crecimiento en armonía (3 años)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "3 años",
+      "area": "Descubrimiento y exploración",
+      "titulo": "Ficha de descubrimiento y exploración (3 años)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "3 años",
+      "area": "Comunicación y representación",
+      "titulo": "Ficha de comunicación y representación (3 años)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "4 años",
+      "area": "Crecimiento en armonía",
+      "titulo": "Ficha de crecimiento en armonía (4 años)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "4 años",
+      "area": "Descubrimiento y exploración",
+      "titulo": "Ficha de descubrimiento y exploración (4 años)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "4 años",
+      "area": "Comunicación y representación",
+      "titulo": "Ficha de comunicación y representación (4 años)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "5 años",
+      "area": "Crecimiento en armonía",
+      "titulo": "Ficha de crecimiento en armonía (5 años)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "5 años",
+      "area": "Descubrimiento y exploración",
+      "titulo": "Ficha de descubrimiento y exploración (5 años)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "5 años",
+      "area": "Comunicación y representación",
+      "titulo": "Ficha de comunicación y representación (5 años)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "1º",
+      "area": "Lengua",
+      "titulo": "Letras y palabras (1º)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "1º",
+      "area": "Matemáticas",
+      "titulo": "Sumas y restas (1º)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "2º",
+      "area": "Lengua",
+      "titulo": "Letras y palabras (2º)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "2º",
+      "area": "Matemáticas",
+      "titulo": "Sumas y restas (2º)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "3º",
+      "area": "Lengua",
+      "titulo": "Letras y palabras (3º)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    },
+    {
+      "curso": "3º",
+      "area": "Matemáticas",
+      "titulo": "Sumas y restas (3º)",
+      "enlace": "ficha_ejemplo.html",
+      "tipo": "Pública"
+    }
+  ]
+}

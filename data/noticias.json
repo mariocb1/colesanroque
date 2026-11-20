@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "fecha": "2026-11-19",
+      "titulo": "Roque estrena el rincón de lectura",
+      "resumen": "La biblioteca estrena sillones y cojines para leer en los recreos.",
+      "etiqueta": "Biblioteca",
+      "emoji": "📚",
+      "enlace": "",
+      "estado": "Portada",
+      "texto": "",
+      "imagen": ""
+    },
+    {
+      "fecha": "2026-11-17",
+      "titulo": "Recogida de alimentos solidaria",
+      "resumen": "Todas las clases han llenado las cajas del pasillo.",
+      "etiqueta": "Solidaridad",
+      "emoji": "🥫",
+      "enlace": "",
+      "estado": "Portada",
+      "texto": "",
+      "imagen": ""
+    },
+    {
+      "fecha": "2026-11-14",
+      "titulo": "Simulacro de evacuación",
+      "resumen": "Salimos del edificio en menos de tres minutos. ¡Enhorabuena!",
+      "etiqueta": "Seguridad",
+      "emoji": "🚸",
+      "enlace": "",
+      "estado": "Portada",
+      "texto": "",
+      "imagen": ""
+    },
+    {
+      "fecha": "2026-11-10",
+      "titulo": "Nuevo horario de tutorías",
+      "resumen": "Las tutorías con familias pasan a los martes por la tarde.",
+      "etiqueta": "Familias",
+      "emoji": "🗓️",
+      "enlace": "",
+      "estado": "Portada",
+      "texto": "",
+      "imagen": ""
+    },
+    {
+      "fecha": "2026-11-05",
+      "titulo": "Arranca el huerto escolar",
+      "resumen": "Las clases de 3º plantan lechugas y ajos.",
+      "etiqueta": "Programas",
+      "emoji": "🥕",
+      "enlace": "",
+      "estado": "Portada",
+      "texto": "",
+      "imagen": ""
+    },
+    {
+      "fecha": "2026-10-30",
+      "titulo": "Castañada en el patio",
+      "resumen": "Un recreo con castañas asadas y cuentos de miedo suave.",
+      "etiqueta": "Efemérides",
+      "emoji": "🌰",
+      "enlace": "",
+      "estado": "Archivo",
+      "texto": "",
+      "imagen": ""
+    },
+    {
+      "fecha": "2026-10-12",
+      "titulo": "Concurso de calabazas",
+      "resumen": "Más de cuarenta calabazas decoradas por las familias.",
+      "etiqueta": "Efemérides",
+      "emoji": "🎃",
+      "enlace": "",
+      "estado": "Archivo",
+      "texto": "",
+      "imagen": ""
+    },
+    {
+      "fecha": "2026-11-27",
+      "titulo": "Charla para familias: pantallas",
+      "resumen": "Escuela de familias sobre el uso saludable de móviles y tablets.",
+      "etiqueta": "Familias",
+      "emoji": "📱",
+      "enlace": "",
+      "estado": "Portada",
+      "texto": "",
+      "imagen": ""
+    }
+  ]
+}

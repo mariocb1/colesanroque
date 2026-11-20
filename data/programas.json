@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "nombre": "CIMA",
+      "grupo": "Programas de la Consejería",
+      "emoji": "🌿",
+      "resumen": "Cuidamos el medio ambiente.",
+      "detalle": "Texto de ejemplo: describe aquí objetivos y actividades.",
+      "coordina": "Coordinación del programa",
+      "enlace": ""
+    },
+    {
+      "nombre": "Creciendo en Salud",
+      "grupo": "Programas de la Consejería",
+      "emoji": "🍏",
+      "resumen": "Hábitos de vida saludables.",
+      "detalle": "Texto de ejemplo.",
+      "coordina": "Coordinación del programa",
+      "enlace": ""
+    },
+    {
+      "nombre": "Plan de Igualdad",
+      "grupo": "Programas de la Consejería",
+      "emoji": "⚖️",
+      "resumen": "Coeducación e igualdad.",
+      "detalle": "Texto de ejemplo.",
+      "coordina": "Coordinación del programa",
+      "enlace": ""
+    },
+    {
+      "nombre": "Convivencia+",
+      "grupo": "Programas de la Consejería",
+      "emoji": "🤝",
+      "resumen": "Buen trato y mediación.",
+      "detalle": "Texto de ejemplo.",
+      "coordina": "Coordinación del programa",
+      "enlace": ""
+    },
+    {
+      "nombre": "Bilingüismo",
+      "grupo": "Proyectos del centro",
+      "emoji": "🇬🇧",
+      "resumen": "Aprender en inglés.",
+      "detalle": "Texto de ejemplo.",
+      "coordina": "Coordinación del programa",
+      "enlace": ""
+    },
+    {
+      "nombre": "Huerto escolar",
+      "grupo": "Proyectos del centro",
+      "emoji": "🥕",
+      "resumen": "Aprender cultivando.",
+      "detalle": "Texto de ejemplo.",
+      "coordina": "Coordinación del programa",
+      "enlace": ""
+    },
+    {
+      "nombre": "PIEFCITOS",
+      "grupo": "Proyectos del centro",
+      "emoji": "🏃",
+      "resumen": "Educación física inclusiva.",
+      "detalle": "Texto de ejemplo.",
+      "coordina": "Coordinación del programa",
+      "enlace": ""
+    },
+    {
+      "nombre": "Digicraft",
+      "grupo": "Proyectos del centro",
+      "emoji": "💻",
+      "resumen": "Competencia digital.",
+      "detalle": "Texto de ejemplo.",
+      "coordina": "Coordinación del programa",
+      "enlace": ""
+    },
+    {
+      "nombre": "Escuela 4.0",
+      "grupo": "Proyectos del centro",
+      "emoji": "📡",
+      "resumen": "Tecnología en el aula.",
+      "detalle": "Texto de ejemplo.",
+      "coordina": "Coordinación del programa",
+      "enlace": ""
+    },
+    {
+      "nombre": "Erasmus+",
+      "grupo": "Proyectos europeos",
+      "emoji": "🇪🇺",
+      "resumen": "Intercambios con otros países.",
+      "detalle": "Texto de ejemplo.",
+      "coordina": "Coordinación del programa",
+      "enlace": ""
+    }
+  ]
+}

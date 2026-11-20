@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "nombre": "Carmen Ruiz López",
+      "cargo": "Dirección",
+      "etapa": "Equipo directivo"
+    },
+    {
+      "nombre": "Antonio Jiménez Peña",
+      "cargo": "Jefatura de estudios",
+      "etapa": "Equipo directivo"
+    },
+    {
+      "nombre": "Lucía Moreno Gil",
+      "cargo": "Tutoría de 3 años",
+      "etapa": "Infantil"
+    },
+    {
+      "nombre": "Miguel Ángel Torres",
+      "cargo": "Tutoría de 4 años",
+      "etapa": "Infantil"
+    },
+    {
+      "nombre": "Rosario Cano Sáez",
+      "cargo": "Tutoría de 5 años",
+      "etapa": "Infantil"
+    },
+    {
+      "nombre": "Javier Ortega Lara",
+      "cargo": "Tutoría de 1º",
+      "etapa": "Primaria"
+    },
+    {
+      "nombre": "Elena Marín Vera",
+      "cargo": "Tutoría de 3º",
+      "etapa": "Primaria"
+    },
+    {
+      "nombre": "Pablo Ruiz Cobo",
+      "cargo": "Tutoría de 6º",
+      "etapa": "Primaria"
+    },
+    {
+      "nombre": "Marta Navarro Díaz",
+      "cargo": "Inglés",
+      "etapa": "Especialistas"
+    },
+    {
+      "nombre": "Isabel Cruz Molina",
+      "cargo": "Educación Física",
+      "etapa": "Especialistas"
+    },
+    {
+      "nombre": "Sergio Lara Ríos",
+      "cargo": "Música",
+      "etapa": "Especialistas"
+    },
+    {
+      "nombre": "Ana Belén Soto",
+      "cargo": "Orientación",
+      "etapa": "Apoyo"
+    }
+  ]
+}

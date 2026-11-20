@@ -1,0 +1,168 @@
+# Configuración del panel de edición (Decap CMS).
+# Cambia TU_USUARIO y el nombre del repositorio por los tuyos.
+backend:
+  name: github
+  repo: TU_USUARIO/colegio-san-roque
+  branch: main
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+publish_mode: simple
+
+collections:
+  - name: contenido
+    label: "Contenido de la web"
+    files:
+      - name: ajustes
+        label: "Textos generales"
+        file: data/ajustes.json
+        format: json
+        fields:
+          - {label: "Lema", name: lema, widget: string}
+          - {label: "Subtítulo", name: subtitulo, widget: string}
+          - {label: "Dirección", name: direccion, widget: string}
+          - {label: "Teléfono", name: telefono, widget: string}
+          - {label: "Email", name: email, widget: string}
+          - {label: "Menú del comedor", name: menu_comedor, widget: text}
+          - {label: "Libro del mes", name: libro_mes, widget: text}
+          - {label: "Calendario escolar (texto)", name: calendario_texto, widget: text}
+          - {label: "Buzón de sugerencias (texto)", name: buzon_texto, widget: text}
+
+      - name: portada
+        label: "Portada: cuántas se ven"
+        file: data/portada.json
+        format: json
+        fields:
+          - label: "Configuración"
+            name: items
+            widget: list
+            summary: "Desde {{fields.desde}}: {{fields.noticias}} noticias, {{fields.entradas}} entradas"
+            fields:
+              - {label: "Desde el día", name: desde, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
+              - {label: "Noticias en portada", name: noticias, widget: number, value_type: int, default: 3}
+              - {label: "Entradas de blog en portada", name: entradas, widget: number, value_type: int, default: 3}
+
+      - name: avisos
+        label: "Avisos y plazos"
+        file: data/avisos.json
+        format: json
+        fields:
+          - label: "Avisos"
+            name: items
+            widget: list
+            summary: "{{fields.texto}}"
+            fields:
+              - {label: "Fecha límite", name: fecha_limite, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
+              - {label: "Texto", name: texto, widget: string}
+              - {label: "Urgente", name: urgente, widget: boolean, default: false}
+              - {label: "Enlace (opcional)", name: enlace, widget: string, required: false}
+
+      - name: noticias
+        label: "Noticias"
+        file: data/noticias.json
+        format: json
+        fields:
+          - label: "Noticias"
+            name: items
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - {label: "Fecha", name: fecha, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
+              - {label: "Título", name: titulo, widget: string}
+              - {label: "Resumen", name: resumen, widget: text}
+              - {label: "Etiqueta", name: etiqueta, widget: string, required: false}
+              - {label: "Emoji (si no hay foto)", name: emoji, widget: string, required: false}
+              - {label: "Foto (opcional)", name: imagen, widget: image, required: false}
+              - {label: "Enlace (opcional)", name: enlace, widget: string, required: false}
+              - label: "Estado"
+                name: estado
+                widget: select
+                default: "Portada"
+                options: ["Portada", "Archivo", "Borrador"]
+
+      - name: blog
+        label: "Blog de aula"
+        file: data/blog.json
+        format: json
+        fields:
+          - label: "Entradas"
+            name: items
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - {label: "Fecha", name: fecha, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
+              - {label: "Título", name: titulo, widget: string}
+              - {label: "Resumen (para la tarjeta)", name: resumen, widget: text, required: false}
+              - {label: "Texto completo (separa párrafos con una línea en blanco)", name: texto, widget: text}
+              - {label: "Etiqueta", name: etiqueta, widget: string, required: false}
+              - {label: "Emoji (si no hay foto)", name: emoji, widget: string, required: false}
+              - {label: "Foto (opcional)", name: imagen, widget: image, required: false}
+              - label: "Estado"
+                name: estado
+                widget: select
+                default: "Portada"
+                options: ["Portada", "Archivo", "Borrador"]
+
+      - name: programas
+        label: "Planes y programas"
+        file: data/programas.json
+        format: json
+        fields:
+          - label: "Programas"
+            name: items
+            widget: list
+            summary: "{{fields.nombre}}"
+            fields:
+              - {label: "Nombre", name: nombre, widget: string}
+              - {label: "Grupo (p. ej. Proyectos del centro)", name: grupo, widget: string}
+              - {label: "Emoji", name: emoji, widget: string}
+              - {label: "Resumen corto", name: resumen, widget: string}
+              - {label: "Descripción completa", name: detalle, widget: text}
+              - {label: "Coordina", name: coordina, widget: string}
+              - {label: "Enlace (opcional)", name: enlace, widget: string, required: false}
+
+      - name: servicios
+        label: "Servicios"
+        file: data/servicios.json
+        format: json
+        fields:
+          - label: "Servicios"
+            name: items
+            widget: list
+            summary: "{{fields.nombre}}"
+            fields:
+              - {label: "Nombre", name: nombre, widget: string}
+              - {label: "Emoji", name: emoji, widget: string}
+              - {label: "Descripción", name: descripcion, widget: string}
+
+      - name: docentes
+        label: "Equipo docente"
+        file: data/docentes.json
+        format: json
+        fields:
+          - label: "Docentes"
+            name: items
+            widget: list
+            summary: "{{fields.nombre}}"
+            fields:
+              - {label: "Nombre", name: nombre, widget: string}
+              - {label: "Cargo", name: cargo, widget: string}
+              - label: "Etapa"
+                name: etapa
+                widget: select
+                options: ["Equipo directivo", "Infantil", "Primaria", "Especialistas", "Apoyo"]
+
+      - name: fichas
+        label: "Recursos (fichas)"
+        file: data/fichas.json
+        format: json
+        fields:
+          - label: "Fichas"
+            name: items
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - {label: "Curso", name: curso, widget: string}
+              - {label: "Área", name: area, widget: string}
+              - {label: "Título", name: titulo, widget: string}
+              - {label: "Enlace al archivo o página", name: enlace, widget: string}

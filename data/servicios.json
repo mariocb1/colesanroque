@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "nombre": "Comedor",
+      "emoji": "🍽️",
+      "descripcion": "Comida casera cada día."
+    },
+    {
+      "nombre": "Aula matinal",
+      "emoji": "🌅",
+      "descripcion": "Desde primera hora, con actividades."
+    },
+    {
+      "nombre": "Ludoespera",
+      "emoji": "🧩",
+      "descripcion": "Juego y apoyo hasta la salida."
+    },
+    {
+      "nombre": "Biblioteca",
+      "emoji": "📖",
+      "descripcion": "El reino de Roque."
+    },
+    {
+      "nombre": "Pista polideportiva",
+      "emoji": "⚽",
+      "descripcion": "Deporte en el recreo y en extraescolares."
+    }
+  ]
+}
