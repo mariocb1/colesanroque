@@ -47,7 +47,7 @@ button.card{text-align:left;font:inherit;cursor:pointer}button.card:hover{backgr
 dialog{border:3px solid var(--noche);border-radius:16px;max-width:480px;padding:22px}dialog::backdrop{background:#0f3f7388}
 footer{background:var(--noche);color:#dfe9f7;padding:28px 0;font-size:.95rem}footer img{height:60px;float:left;margin-right:16px}
 @media(max-width:760px){.hero .wrap{grid-template-columns:1fr}nav{margin:0}}
-.hero-cta{text-align:center;margin-top:26px}.det-img{width:100%;max-width:640px;border-radius:14px;display:block;margin:16px 0}#det p{max-width:65ch}
+.hero-cta{text-align:center;margin-top:26px}.asig{color:var(--morado);margin:28px 0 8px}.unidad{background:#fff;color:var(--tinta);border-radius:12px;padding:12px 16px;margin:10px 0;border:2px solid var(--cielo)}.unidad h4{margin:0 0 6px;color:var(--noche);font-size:1.05rem}.ficha{display:block;padding:6px 0;font-weight:700}.det-img{width:100%;max-width:640px;border-radius:14px;display:block;margin:16px 0}#det p{max-width:65ch}
 .galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin:12px 0 20px}.galeria img{width:100%;height:150px;object-fit:cover;border-radius:10px;display:block}
 </style></head><body>
 <header><div class="wrap"><img src="assets/escudo.jpg" alt="Escudo del CEIP San Roque"><b>CEIP San Roque</b>
@@ -61,7 +61,7 @@ footer{background:var(--noche);color:#dfe9f7;padding:28px 0;font-size:.95rem}foo
 <section id="programas"><div class="wrap"><h2>Planes y programas</h2><div id="prog"></div></div></section>
 <section class="azul" id="servicios"><div class="wrap"><h2>Servicios</h2><div class="grid" id="serv"></div></div></section>
 <section id="docentes"><div class="wrap"><h2>Equipo docente</h2><div class="chips" id="etapas"></div><div class="grid" id="doc"></div></div></section>
-<section class="mor" id="recursos"><div class="wrap"><div class="roque"><img src="assets/roque.png" alt="Roque"><div class="bocata" id="bocata"></div></div><h2>Recursos</h2><div class="chips" id="cursos"></div><div class="areas" id="areas"></div></div></section>
+
 <section id="familias"><div class="wrap"><h2>Familias</h2><div class="grid" id="fam"></div></div></section>
 </div>
 
@@ -69,6 +69,8 @@ footer{background:var(--noche);color:#dfe9f7;padding:28px 0;font-size:.95rem}foo
 <section class="pg" id="p-entradas" hidden><div class="wrap"><p><a href="#inicio">← Volver al inicio</a></p><h2>Todas las entradas del blog</h2><div class="chips"></div><input placeholder="Buscar…" aria-label="Buscar"><div class="lista"></div></div></section>
 
 <section class="pg" id="p-detalle" hidden><div class="wrap"><p><a href="#inicio">← Volver al inicio</a></p><div id="det"></div></div></section>
+
+<section class="pg" id="p-recursos" hidden><div class="wrap"><p><a href="#inicio">← Volver al inicio</a></p><h2>Recursos</h2><div class="roque"><img src="assets/roque.png" alt="Roque"><div class="bocata" id="bocata"></div></div><p>Elige el curso:</p><div class="chips" id="cursos"></div><div id="rec-contenido"></div></div></section>
 
 <footer><div class="wrap"><img src="assets/escudo.jpg" alt=""><b>CEIP San Roque</b><br><span id="pie"></span></div></footer>
 <dialog id="dlg"><div id="dlgc"></div><p><button class="btn" onclick="dlg.close()">Cerrar</button></p></dialog>
@@ -115,7 +117,7 @@ function chips(el,vals,fn){
 function mostrarDetalle(tipo,i){
   let n=listaDe(tipo)[i];
   if(n&&tipo=="aviso") n={titulo:n.texto,fecha:n.fecha_limite,etiqueta:"Aviso",estado:"Portada",texto:n.detalle,enlace:n.enlace,emoji:"📢",galeria:[],enlaces:[]};
-  if(!n||n.estado=="Borrador"||n.fecha>HOY){$("#det").innerHTML="<p>Esta página no está disponible.</p>";return}
+  if(!n||n.estado=="Borrador"||(tipo!="aviso"&&n.fecha>HOY)){$("#det").innerHTML="<p>Esta página no está disponible.</p>";return}
   const parrafos=t=>(t||"").split(/\n\s*\n/).filter(p=>p.trim()).map(p=>`<p>${H(p.trim())}</p>`).join("");
   const galeria=(n.galeria||[]).filter(g=>g&&g.foto).map(g=>`<a href="${H(g.foto)}" target="_blank" rel="noopener"><img src="${H(g.foto)}" alt=""></a>`).join("");
   const enlaces=(n.enlaces||[]).filter(e=>e&&e.url).map(e=>`<li><a href="${H(e.url)}" target="_blank" rel="noopener">${H(e.texto||e.url)}</a></li>`).join("");
@@ -131,11 +133,12 @@ function mostrarDetalle(tipo,i){
 function route(){
   const h=decodeURIComponent(location.hash.slice(1));
   const m=h.match(/^(noticia|entrada|aviso)=(\d+)$/);
-  const ar=h=="noticias"||h=="entradas";
+  const ar=h=="noticias"||h=="entradas"||h=="recursos";
   $("#home").hidden=ar||!!m;
   $("#p-noticias").hidden=h!="noticias";
   $("#p-entradas").hidden=h!="entradas";
   $("#p-detalle").hidden=!m;
+  $("#p-recursos").hidden=h!="recursos";
   if(m){mostrarDetalle(m[1],+m[2]);scrollTo(0,0)}
   else if(ar)scrollTo(0,0);
   else if(h)setTimeout(()=>document.getElementById(h)?.scrollIntoView(),30);
@@ -179,10 +182,19 @@ cargar().then(()=>{
   chips($("#etapas"),["Todo el equipo",...new Set(DOC.map(d=>d.etapa))],dp);
 
   const FI=L(D.fichas), cu=[...new Set(FI.map(f=>f.curso))];
-  const ar=c=>{const f=FI.filter(x=>x.curso==c),as=[...new Set(f.map(x=>x.area))];
+  const pintaCurso=c=>{
     $("#bocata").textContent=c.includes("año")?"¡Vamos a jugar y aprender!":"¡A por las fichas, campeones!";
-    $("#areas").innerHTML=as.map(a=>`<div class="area"><h3>${H(a)}</h3>${f.filter(x=>x.area==a).map(x=>`<a href="${H(x.enlace)}" target="_blank">${H(x.titulo)}</a>`).join("")}</div>`).join("")};
-  chips($("#cursos"),cu,ar);
+    const fc=FI.filter(f=>f.curso==c);
+    const asig=[...new Set(fc.map(f=>f.area))];
+    $("#rec-contenido").innerHTML=asig.map(a=>{
+      const fa=fc.filter(f=>f.area==a);
+      const unis=[...new Set(fa.map(f=>f.unidad||"General"))];
+      return `<h3 class="asig">${H(a)}</h3>`+unis.map(u=>
+        `<div class="unidad"><h4>${H(u)}</h4>${fa.filter(f=>(f.unidad||"General")==u).map(f=>`<a class="ficha" href="${H(f.enlace)}" target="_blank" rel="noopener">${H(f.titulo)}</a>`).join("")}</div>`
+      ).join("");
+    }).join("")||"<p>Todavía no hay recursos en este curso.</p>";
+  };
+  chips($("#cursos"),cu,pintaCurso);
 
   $("#fam").innerHTML=[["🍽️","Menú del comedor",A.menu_comedor],["📖","Libro del mes de Roque",A.libro_mes],["🗓️","Calendario escolar",A.calendario_texto],["💬","Buzón de sugerencias",A.buzon_texto]].map(c=>`<div class="card"><b style="font-size:1.6rem">${c[0]}</b><h3>${c[1]}</h3>${H(c[2])}</div>`).join("");
 

@@ -191,7 +191,11 @@ collections:
             widget: list
             summary: "{{fields.titulo}}"
             fields:
-              - {label: "Curso", name: curso, widget: string}
-              - {label: "Área", name: area, widget: string}
+              - label: "Curso"
+                name: curso
+                widget: select
+                options: ["3 años", "4 años", "5 años", "1º", "2º", "3º", "4º", "5º", "6º"]
+              - {label: "Asignatura o área", name: area, widget: string}
+              - {label: "Temática o unidad (opcional)", name: unidad, widget: string, required: false}
               - {label: "Título", name: titulo, widget: string}
               - {label: "Enlace al archivo o página", name: enlace, widget: string}
