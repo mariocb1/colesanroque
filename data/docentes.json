@@ -13,6 +13,18 @@
       "foto": "assets/docentes/raquel.svg"
     },
     {
+      "nombre": "Alejandra",
+      "cargo": "Secretaria\nTutora de 1º",
+      "etapa": "Equipo directivo",
+      "foto": "assets/docentes/alejandra.svg"
+    },
+    {
+      "nombre": "Eva",
+      "cargo": "Tutora de 3 años",
+      "etapa": "Infantil",
+      "foto": "assets/docentes/eva.svg"
+    },
+    {
       "nombre": "Juani",
       "cargo": "Tutora de 4 años",
       "etapa": "Infantil",
@@ -23,12 +35,6 @@
       "cargo": "Tutora de 5 años",
       "etapa": "Infantil",
       "foto": "assets/docentes/maribel.svg"
-    },
-    {
-      "nombre": "Eva",
-      "cargo": "Tutora de 3 años",
-      "etapa": "Infantil",
-      "foto": "assets/docentes/eva.svg"
     },
     {
       "nombre": "Inmaculada",
@@ -53,12 +59,6 @@
       "cargo": "Tutoría de 5º",
       "etapa": "Primaria",
       "foto": "assets/docentes/asen.svg"
-    },
-    {
-      "nombre": "Alejandra",
-      "cargo": "Secretaria\nTutora de 1º",
-      "etapa": "Equipo directivo",
-      "foto": "assets/docentes/alejandra.svg"
     },
     {
       "nombre": "María del Pilar",
@@ -91,12 +91,6 @@
       "foto": "assets/docentes/fatima.svg"
     },
     {
-      "nombre": "Laura",
-      "cargo": "PTIS",
-      "etapa": "Apoyo",
-      "foto": "assets/docentes/laura.svg"
-    },
-    {
       "nombre": "Mónica",
       "cargo": "Audición y Lenguaje (AL)",
       "etapa": "Apoyo",
@@ -107,6 +101,12 @@
       "cargo": "Orientadora",
       "etapa": "Apoyo",
       "foto": "assets/docentes/inma.svg"
+    },
+    {
+      "nombre": "Laura",
+      "cargo": "PTIS",
+      "etapa": "Apoyo",
+      "foto": "assets/docentes/laura.svg"
     }
   ]
 }
