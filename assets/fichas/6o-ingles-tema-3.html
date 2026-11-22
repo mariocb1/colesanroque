@@ -1,0 +1,68 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tiempo, rutinas y lugares</title><style>*{box-sizing:border-box}body{font-family:system-ui,"Segoe UI",sans-serif;background:#fdf6ea;margin:0;padding:16px;color:#1c2a3a}
+.c{max-width:780px;margin:auto;background:#fff;border-radius:20px;padding:18px;box-shadow:0 3px 14px #0001}
+.cab{position:relative;height:150px;overflow:hidden;border-radius:14px;background:#1d5fa0}.cab .sr{width:100%;height:100%;object-fit:cover;object-position:60% 35%}
+.cab .lap{position:absolute;right:14px;bottom:8px;font-size:44px;transform:rotate(-20deg)}.cab .esc{position:absolute;left:12px;top:10px;width:58px;background:#fff;border-radius:10px;padding:3px}
+.volver{color:#1d5fa0;font-weight:700;text-decoration:none;display:inline-block;margin-top:10px}h1{color:#1d5fa0;font-size:1.6rem;margin:8px 0 4px}.intro{margin:4px 0 12px;color:#3d4d5f;font-size:1.05rem}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}.tab{border:2px solid #1d5fa0;background:#fff;color:#1d5fa0;border-radius:999px;padding:8px 14px;font-weight:700;cursor:pointer;font-size:.95rem}.tab.on{background:#1d5fa0;color:#fff}
+.act{border:2px solid #98b6e0;border-radius:14px;padding:14px;margin:12px 0}.enun{font-size:1.1rem;font-weight:700;margin-bottom:10px}
+.op{display:inline-block;margin:5px;padding:10px 16px;border:2px solid #1d5fa0;border-radius:12px;background:#fff;cursor:pointer;font-size:1.1rem}.op.sel{background:#dbe8f8}
+.txt{font-size:1.1rem;padding:10px;width:100%;max-width:340px;border:2px solid #98b6e0;border-radius:10px}
+.banco{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;min-height:44px}.chip{padding:9px 13px;border-radius:999px;background:#e8b93a;font-weight:700;cursor:grab;user-select:none;font-size:1rem}.chip.sel{outline:3px solid #1d5fa0}
+.zonas{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.zona{min-height:90px;border:2px dashed #1d5fa0;border-radius:14px;padding:8px;background:#f4f8fd;cursor:pointer}.zona b{display:block;color:#1d5fa0;margin-bottom:6px}.dentro{background:#fff;border-radius:10px;padding:6px;min-height:28px;font-weight:700}
+.unir{position:relative;display:flex;justify-content:space-between;gap:60px}.col{display:flex;flex-direction:column;gap:10px;position:relative;z-index:2;flex:1}.nodo{padding:10px;border:2px solid #1d5fa0;border-radius:12px;background:#fff;cursor:pointer;font-size:1.05rem;text-align:left}.nodo.sel{background:#dbe8f8}
+svg.lineas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}svg.lineas line{stroke:#e8b93a;stroke-width:5;stroke-linecap:round}
+.rejilla{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}.cel{font-size:46px;padding:6px;border:3px solid transparent;border-radius:14px;cursor:pointer;background:#f4f8fd}.cel.sel{border-color:#c0392b;background:#fdecec}
+.marca{margin-top:8px;font-weight:700}.marca.bien{color:#2e8b57}.marca.mal{color:#c0392b}
+.pie{margin-top:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}.btn{padding:12px 20px;border:0;border-radius:12px;background:#e8b93a;font-weight:700;cursor:pointer;font-size:1.05rem;text-decoration:none;color:#1c2a3a}.sig{background:#2e8b57;color:#fff}.res{font-size:1.15rem;font-weight:700}
+.conejo{height:80px;display:none}</style></head>
+<body><div class="c">
+<div class="cab"><img class="sr" src="../hero.png" alt="San Roque"><img class="esc" src="../escudo.jpg" alt="Escudo del colegio"><span class="lap">✏️</span></div>
+<a class="volver" href="../../index.html#recursos">← Volver a recursos</a>
+<h1>Tiempo, rutinas y lugares</h1><p class="intro">👨‍🍳 el cocinero Pepe quiere explora la selva. ¡Ayúdale con esta ficha!</p>
+<nav id="tabs" class="tabs"></nav><div id="cont"></div>
+<div class="pie"><button class="btn" id="fin">Comprobar</button><span class="res" id="res"></span><a id="sig" class="btn sig" hidden>Siguiente ficha →</a><img id="conejo" class="conejo" src="../roque.png" alt="Roque el conejo"></div>
+</div><script>const F={"secciones": [{"titulo": "🔎 Descubre", "acts": [{"t": "opcion", "q": "🏥 ¿Cómo se dice en inglés?", "o": ["park", "hospital", "shop"], "a": 1}, {"t": "opcion", "q": "🏠 ¿Cómo se dice en inglés?", "o": ["house", "school", "park"], "a": 0}]}, {"titulo": "🧩 Juega", "acts": [{"t": "unir", "q": "Une cada dibujo con su palabra.", "izq": [{"id": "a0", "texto": "🏥"}, {"id": "a1", "texto": "🏠"}, {"id": "a2", "texto": "🏫"}, {"id": "a3", "texto": "🏦"}], "der": [{"id": "b2", "texto": "school"}, {"id": "b3", "texto": "bank"}, {"id": "b0", "texto": "hospital"}, {"id": "b1", "texto": "house"}], "par": {"a0": "b0", "a1": "b1", "a2": "b2", "a3": "b3"}}]}, {"titulo": "🏆 Demuestra", "acts": [{"t": "escribir", "q": "🏞️ Escribe cómo se llama.", "ok": ["park"]}, {"t": "dibujo", "q": "Pulsa el dibujo de «hospital».", "svg": "<div class=\"rejilla\"><span class=\"cel\" data-z=\"c0\">🏞️</span><span class=\"cel\" data-z=\"c1\">🏥</span><span class=\"cel\" data-z=\"c2\">🏫</span><span class=\"cel\" data-z=\"c3\">🏦</span><span class=\"cel\" data-z=\"c4\">🏪</span><span class=\"cel\" data-z=\"c5\">🏠</span></div>", "a": "c1"}]}], "siguiente": "6o-conocimiento-del-medio-tema-1.html"};
+const $=s=>document.querySelector(s);
+const st={};const DRAW={};
+function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim()}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function mostrar(i){F.secciones.forEach((s,j)=>{$('#sec'+j).hidden=j!==i;$('#tab'+j).classList.toggle('on',j===i)});Object.values(DRAW).forEach(f=>f());}
+function render(a,id){const cu=$('#cu'+id);
+ if(a.t==='opcion'){st[id]=null;a.o.forEach((o,k)=>{const b=document.createElement('button');b.className='op';b.textContent=o;b.onclick=()=>{st[id]=k;cu.querySelectorAll('.op').forEach(x=>x.classList.remove('sel'));b.classList.add('sel')};cu.append(b)})}
+ else if(a.t==='escribir'){st[id]='';const i=document.createElement('input');i.type='text';i.className='txt';i.placeholder='Escribe aquí ✍️';i.oninput=()=>st[id]=i.value;cu.append(i)}
+ else if(a.t==='dibujo'){st[id]=null;const d=document.createElement('div');d.innerHTML=a.svg;d.querySelectorAll('[data-z]').forEach(z=>{z.onclick=()=>{st[id]=z.dataset.z;d.querySelectorAll('[data-z]').forEach(y=>y.classList.remove('sel'));z.classList.add('sel')}});cu.append(d)}
+ else if(a.t==='arrastrar'){st[id]={};let sel=null;const banco=document.createElement('div');banco.className='banco';const zonas=document.createElement('div');zonas.className='zonas';
+  function pinta(){banco.innerHTML='';const usados=Object.keys(st[id]);
+   a.items.forEach(it=>{if(usados.includes(it.id))return;const c=document.createElement('span');c.className='chip'+(sel===it.id?' sel':'');c.textContent=it.texto;c.draggable=true;c.ondragstart=e=>e.dataTransfer.setData('text/plain',it.id);c.onclick=()=>{sel=sel===it.id?null:it.id;pinta()};banco.append(c)});
+   zonas.innerHTML='';a.zonas.forEach(z=>{const d=document.createElement('div');d.className='zona';d.ondragover=e=>e.preventDefault();d.ondrop=e=>{e.preventDefault();colocar(e.dataTransfer.getData('text/plain'),z.id)};
+     d.onclick=()=>{const dentro=Object.keys(st[id]).find(k=>st[id][k]===z.id);if(sel)colocar(sel,z.id);else if(dentro){delete st[id][dentro];pinta()}};
+     const item=Object.keys(st[id]).find(k=>st[id][k]===z.id);const it=a.items.find(x=>x.id===item);
+     d.innerHTML='<b>'+esc(z.nombre)+'</b><div class="dentro">'+(it?esc(it.texto):'&nbsp;')+'</div>';zonas.append(d)})}
+  function colocar(itemId,zid){Object.keys(st[id]).forEach(k=>{if(st[id][k]===zid&&k!==itemId)delete st[id][k]});st[id][itemId]=zid;sel=null;pinta()}
+  pinta();cu.append(banco,zonas)}
+ else if(a.t==='unir'){st[id]={};let selI=null;const wrap=document.createElement('div');wrap.className='unir';const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('class','lineas');
+  const c1=document.createElement('div');c1.className='col';const c2=document.createElement('div');c2.className='col';
+  a.izq.forEach(x=>{const b=document.createElement('button');b.className='nodo';b.textContent=x.texto;b.dataset.i=x.id;b.onclick=()=>{if(st[id][x.id]&&selI===null){delete st[id][x.id];dibujar();return}selI=x.id;c1.querySelectorAll('.nodo').forEach(n=>n.classList.toggle('sel',n.dataset.i===x.id))};c1.append(b)});
+  a.der.forEach(x=>{const b=document.createElement('button');b.className='nodo';b.textContent=x.texto;b.dataset.d=x.id;b.onclick=()=>{if(selI){Object.keys(st[id]).forEach(k=>{if(k===selI)delete st[id][k]});st[id][selI]=x.id;selI=null;c1.querySelectorAll('.nodo').forEach(n=>n.classList.remove('sel'));dibujar()}};c2.append(b)});
+  function dibujar(){svg.innerHTML='';const rw=wrap.getBoundingClientRect();svg.setAttribute('viewBox','0 0 '+rw.width+' '+rw.height);
+   Object.keys(st[id]).forEach(k=>{const e1=c1.querySelector('[data-i="'+k+'"]');const e2=c2.querySelector('[data-d="'+st[id][k]+'"]');if(!e1||!e2)return;const r1=e1.getBoundingClientRect(),r2=e2.getBoundingClientRect();
+    const l=document.createElementNS('http://www.w3.org/2000/svg','line');l.setAttribute('x1',r1.right-rw.left);l.setAttribute('y1',r1.top+r1.height/2-rw.top);l.setAttribute('x2',r2.left-rw.left);l.setAttribute('y2',r2.top+r2.height/2-rw.top);svg.append(l)})}
+  DRAW[id]=dibujar;wrap.append(svg,c1,c2);cu.append(wrap);setTimeout(dibujar,30)}
+}
+function correcto(a,id){
+ if(a.t==='opcion'||a.t==='dibujo')return st[id]===a.a;
+ if(a.t==='escribir')return (a.ok||[]).map(norm).includes(norm(st[id]));
+ if(a.t==='arrastrar'){const m=st[id];const ks=Object.keys(m);return ks.length===a.items.length&&ks.every(k=>m[k]===a.sol[k])}
+ if(a.t==='unir'){const m=st[id];const ks=Object.keys(m);return ks.length===Object.keys(a.par).length&&ks.every(k=>m[k]===a.par[k])}
+ return false}
+function comprobar(){let ok=0,tot=0;
+ F.secciones.forEach((s,i)=>s.acts.forEach((a,k)=>{const id=i+'-'+k;tot++;const v=correcto(a,id);if(v)ok++;const mk=$('#mk'+id);mk.className='marca '+(v?'bien':'mal');mk.textContent=v?'✔ ¡Muy bien!':'✘ Vuelve a intentarlo'}));
+ const todo=ok===tot;
+ $('#res').textContent=todo?'🌟 ¡Ficha completa! Has acertado '+ok+' de '+tot:'Has acertado '+ok+' de '+tot+'. ¡Repasa las que no están bien!';
+ $('#conejo').style.display='inline-block';
+ $('#sig').hidden=false}
+function build(){F.secciones.forEach((s,i)=>{const b=document.createElement('button');b.className='tab';b.id='tab'+i;b.textContent=s.titulo;b.onclick=()=>mostrar(i);$('#tabs').append(b);
+ const d=document.createElement('section');d.id='sec'+i;d.hidden=true;$('#cont').append(d);
+ s.acts.forEach((a,k)=>{const id=i+'-'+k;const el=document.createElement('div');el.className='act';el.innerHTML='<div class="enun">'+a.q+'</div><div id="cu'+id+'"></div><div class="marca" id="mk'+id+'"></div>';d.append(el);render(a,id)})});
+ mostrar(0);$('#fin').onclick=comprobar;$('#sig').href=F.siguiente}
+build();addEventListener('resize',()=>Object.values(DRAW).forEach(f=>f()));</script></body></html>
