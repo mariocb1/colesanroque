@@ -1,64 +1,112 @@
 {
   "items": [
     {
-      "nombre": "Carmen Ruiz López",
-      "cargo": "Dirección",
-      "etapa": "Equipo directivo"
+      "nombre": "Estefanía",
+      "cargo": "Directora",
+      "etapa": "Equipo directivo",
+      "foto": "assets/docentes/estefania.svg"
     },
     {
-      "nombre": "Antonio Jiménez Peña",
-      "cargo": "Jefatura de estudios",
-      "etapa": "Equipo directivo"
+      "nombre": "Raquel",
+      "cargo": "Música y Jefa de Estudios",
+      "etapa": "Equipo directivo",
+      "foto": "assets/docentes/raquel.svg"
     },
     {
-      "nombre": "Lucía Moreno Gil",
-      "cargo": "Tutoría de 3 años",
-      "etapa": "Infantil"
+      "nombre": "Juani",
+      "cargo": "Tutora de 4 años",
+      "etapa": "Infantil",
+      "foto": "assets/docentes/juani.svg"
     },
     {
-      "nombre": "Miguel Ángel Torres",
-      "cargo": "Tutoría de 4 años",
-      "etapa": "Infantil"
+      "nombre": "Maribel",
+      "cargo": "Tutora de 5 años",
+      "etapa": "Infantil",
+      "foto": "assets/docentes/maribel.svg"
     },
     {
-      "nombre": "Rosario Cano Sáez",
-      "cargo": "Tutoría de 5 años",
-      "etapa": "Infantil"
+      "nombre": "Eva",
+      "cargo": "Tutora de 3 años",
+      "etapa": "Infantil",
+      "foto": "assets/docentes/eva.svg"
     },
     {
-      "nombre": "Javier Ortega Lara",
-      "cargo": "Tutoría de 1º",
-      "etapa": "Primaria"
+      "nombre": "Inmaculada",
+      "cargo": "Tutora de 2º",
+      "etapa": "Primaria",
+      "foto": "assets/docentes/inmaculada.svg"
     },
     {
-      "nombre": "Elena Marín Vera",
-      "cargo": "Tutoría de 3º",
-      "etapa": "Primaria"
+      "nombre": "Paloma",
+      "cargo": "Tutora de 3º y Francés",
+      "etapa": "Primaria",
+      "foto": "assets/docentes/paloma.svg"
     },
     {
-      "nombre": "Pablo Ruiz Cobo",
-      "cargo": "Tutoría de 6º",
-      "etapa": "Primaria"
+      "nombre": "Ana",
+      "cargo": "Tutoría de 4º",
+      "etapa": "Primaria",
+      "foto": "assets/docentes/ana.svg"
     },
     {
-      "nombre": "Marta Navarro Díaz",
-      "cargo": "Inglés",
-      "etapa": "Especialistas"
+      "nombre": "Asen",
+      "cargo": "Tutoría de 5º",
+      "etapa": "Primaria",
+      "foto": "assets/docentes/asen.svg"
     },
     {
-      "nombre": "Isabel Cruz Molina",
+      "nombre": "Alejandra",
+      "cargo": "Secretaría y tutora de 1º",
+      "etapa": "Primaria",
+      "foto": "assets/docentes/alejandra.svg"
+    },
+    {
+      "nombre": "María del Pilar",
+      "cargo": "Tutora de 6º e Inglés",
+      "etapa": "Primaria",
+      "foto": "assets/docentes/maria-del-pilar.svg"
+    },
+    {
+      "nombre": "Beatriz",
       "cargo": "Educación Física",
-      "etapa": "Especialistas"
+      "etapa": "Especialistas",
+      "foto": "assets/docentes/beatriz.svg"
     },
     {
-      "nombre": "Sergio Lara Ríos",
-      "cargo": "Música",
-      "etapa": "Especialistas"
+      "nombre": "María",
+      "cargo": "Religión",
+      "etapa": "Especialistas",
+      "foto": "assets/docentes/maria.svg"
     },
     {
-      "nombre": "Ana Belén Soto",
-      "cargo": "Orientación",
-      "etapa": "Apoyo"
+      "nombre": "Mario",
+      "cargo": "Inglés",
+      "etapa": "Especialistas",
+      "foto": "assets/docentes/mario.svg"
+    },
+    {
+      "nombre": "Fátima",
+      "cargo": "Pedagogía Terapéutica (PT)",
+      "etapa": "Apoyo",
+      "foto": "assets/docentes/fatima.svg"
+    },
+    {
+      "nombre": "Laura",
+      "cargo": "PTIS",
+      "etapa": "Apoyo",
+      "foto": "assets/docentes/laura.svg"
+    },
+    {
+      "nombre": "Mónica",
+      "cargo": "Audición y Lenguaje (AL)",
+      "etapa": "Apoyo",
+      "foto": "assets/docentes/monica.svg"
+    },
+    {
+      "nombre": "Inma",
+      "cargo": "Orientadora",
+      "etapa": "Apoyo",
+      "foto": "assets/docentes/inma.svg"
     }
   ]
 }
