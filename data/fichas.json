@@ -1,795 +1,795 @@
 {
   "items": [
     {
-      "curso": "1º",
-      "area": "Matemáticas",
-      "unidad": "Tema 1",
-      "titulo": "Matemáticas: Números y cuentas",
-      "enlace": "assets/fichas/1o-matematicas-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "1º",
-      "area": "Matemáticas",
-      "unidad": "Tema 2",
-      "titulo": "Matemáticas: Operaciones",
-      "enlace": "assets/fichas/1o-matematicas-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "1º",
-      "area": "Matemáticas",
-      "unidad": "Tema 3",
-      "titulo": "Matemáticas: Problemas y repaso",
-      "enlace": "assets/fichas/1o-matematicas-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "1º",
-      "area": "Lengua",
-      "unidad": "Tema 1",
-      "titulo": "Lengua: Ortografía: B y V",
-      "enlace": "assets/fichas/1o-lengua-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "1º",
-      "area": "Lengua",
-      "unidad": "Tema 2",
-      "titulo": "Lengua: Ortografía: LL y Y",
-      "enlace": "assets/fichas/1o-lengua-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "1º",
-      "area": "Lengua",
-      "unidad": "Tema 3",
-      "titulo": "Lengua: Acentuación",
-      "enlace": "assets/fichas/1o-lengua-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "1º",
-      "area": "Inglés",
-      "unidad": "Tema 1",
-      "titulo": "Inglés: Colores",
-      "enlace": "assets/fichas/1o-ingles-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "1º",
-      "area": "Inglés",
-      "unidad": "Tema 2",
-      "titulo": "Inglés: Animales",
-      "enlace": "assets/fichas/1o-ingles-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "1º",
-      "area": "Inglés",
-      "unidad": "Tema 3",
-      "titulo": "Inglés: Números y familia",
-      "enlace": "assets/fichas/1o-ingles-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "1º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 1",
-      "titulo": "Conocimiento del medio: Seres vivos",
-      "enlace": "assets/fichas/1o-conocimiento-del-medio-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "1º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 2",
-      "titulo": "Conocimiento del medio: El cuerpo humano",
-      "enlace": "assets/fichas/1o-conocimiento-del-medio-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "1º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 3",
-      "titulo": "Conocimiento del medio: El agua y el tiempo",
-      "enlace": "assets/fichas/1o-conocimiento-del-medio-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Matemáticas",
-      "unidad": "Tema 1",
-      "titulo": "Matemáticas: Números y cuentas",
-      "enlace": "assets/fichas/2o-matematicas-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Matemáticas",
-      "unidad": "Tema 2",
-      "titulo": "Matemáticas: Operaciones",
-      "enlace": "assets/fichas/2o-matematicas-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Matemáticas",
-      "unidad": "Tema 3",
-      "titulo": "Matemáticas: Problemas y repaso",
-      "enlace": "assets/fichas/2o-matematicas-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Lengua",
-      "unidad": "Tema 1",
-      "titulo": "Lengua: Ortografía: B y V",
-      "enlace": "assets/fichas/2o-lengua-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Lengua",
-      "unidad": "Tema 2",
-      "titulo": "Lengua: Ortografía: LL y Y",
-      "enlace": "assets/fichas/2o-lengua-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Lengua",
-      "unidad": "Tema 3",
-      "titulo": "Lengua: Acentuación",
-      "enlace": "assets/fichas/2o-lengua-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Inglés",
-      "unidad": "Tema 1",
-      "titulo": "Inglés: Colores",
-      "enlace": "assets/fichas/2o-ingles-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Inglés",
-      "unidad": "Tema 2",
-      "titulo": "Inglés: Animales",
-      "enlace": "assets/fichas/2o-ingles-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Inglés",
-      "unidad": "Tema 3",
-      "titulo": "Inglés: Números y familia",
-      "enlace": "assets/fichas/2o-ingles-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 1",
-      "titulo": "Conocimiento del medio: Seres vivos",
-      "enlace": "assets/fichas/2o-conocimiento-del-medio-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 2",
-      "titulo": "Conocimiento del medio: El cuerpo humano",
-      "enlace": "assets/fichas/2o-conocimiento-del-medio-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "2º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 3",
-      "titulo": "Conocimiento del medio: El agua y el tiempo",
-      "enlace": "assets/fichas/2o-conocimiento-del-medio-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Matemáticas",
-      "unidad": "Tema 1",
-      "titulo": "Matemáticas: Números y cuentas",
-      "enlace": "assets/fichas/3o-matematicas-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Matemáticas",
-      "unidad": "Tema 2",
-      "titulo": "Matemáticas: Operaciones",
-      "enlace": "assets/fichas/3o-matematicas-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Matemáticas",
-      "unidad": "Tema 3",
-      "titulo": "Matemáticas: Problemas y repaso",
-      "enlace": "assets/fichas/3o-matematicas-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Lengua",
-      "unidad": "Tema 1",
-      "titulo": "Lengua: Ortografía: B y V",
-      "enlace": "assets/fichas/3o-lengua-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Lengua",
-      "unidad": "Tema 2",
-      "titulo": "Lengua: Ortografía: LL y Y",
-      "enlace": "assets/fichas/3o-lengua-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Lengua",
-      "unidad": "Tema 3",
-      "titulo": "Lengua: Acentuación",
-      "enlace": "assets/fichas/3o-lengua-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Inglés",
-      "unidad": "Tema 1",
-      "titulo": "Inglés: Colores",
-      "enlace": "assets/fichas/3o-ingles-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Inglés",
-      "unidad": "Tema 2",
-      "titulo": "Inglés: Animales",
-      "enlace": "assets/fichas/3o-ingles-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Inglés",
-      "unidad": "Tema 3",
-      "titulo": "Inglés: Números y familia",
-      "enlace": "assets/fichas/3o-ingles-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 1",
-      "titulo": "Conocimiento del medio: Seres vivos",
-      "enlace": "assets/fichas/3o-conocimiento-del-medio-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 2",
-      "titulo": "Conocimiento del medio: El cuerpo humano",
-      "enlace": "assets/fichas/3o-conocimiento-del-medio-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "3º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 3",
-      "titulo": "Conocimiento del medio: El agua y el tiempo",
-      "enlace": "assets/fichas/3o-conocimiento-del-medio-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Matemáticas",
-      "unidad": "Tema 1",
-      "titulo": "Matemáticas: Números y cuentas",
-      "enlace": "assets/fichas/4o-matematicas-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Matemáticas",
-      "unidad": "Tema 2",
-      "titulo": "Matemáticas: Operaciones",
-      "enlace": "assets/fichas/4o-matematicas-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Matemáticas",
-      "unidad": "Tema 3",
-      "titulo": "Matemáticas: Problemas y repaso",
-      "enlace": "assets/fichas/4o-matematicas-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Lengua",
-      "unidad": "Tema 1",
-      "titulo": "Lengua: Ortografía: B y V",
-      "enlace": "assets/fichas/4o-lengua-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Lengua",
-      "unidad": "Tema 2",
-      "titulo": "Lengua: Ortografía: LL y Y",
-      "enlace": "assets/fichas/4o-lengua-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Lengua",
-      "unidad": "Tema 3",
-      "titulo": "Lengua: Acentuación",
-      "enlace": "assets/fichas/4o-lengua-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Inglés",
-      "unidad": "Tema 1",
-      "titulo": "Inglés: Colores",
-      "enlace": "assets/fichas/4o-ingles-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Inglés",
-      "unidad": "Tema 2",
-      "titulo": "Inglés: Animales",
-      "enlace": "assets/fichas/4o-ingles-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Inglés",
-      "unidad": "Tema 3",
-      "titulo": "Inglés: Números y familia",
-      "enlace": "assets/fichas/4o-ingles-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 1",
-      "titulo": "Conocimiento del medio: Seres vivos",
-      "enlace": "assets/fichas/4o-conocimiento-del-medio-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 2",
-      "titulo": "Conocimiento del medio: El cuerpo humano",
-      "enlace": "assets/fichas/4o-conocimiento-del-medio-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "4º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 3",
-      "titulo": "Conocimiento del medio: El agua y el tiempo",
-      "enlace": "assets/fichas/4o-conocimiento-del-medio-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Matemáticas",
-      "unidad": "Tema 1",
-      "titulo": "Matemáticas: Números y cuentas",
-      "enlace": "assets/fichas/5o-matematicas-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Matemáticas",
-      "unidad": "Tema 2",
-      "titulo": "Matemáticas: Operaciones",
-      "enlace": "assets/fichas/5o-matematicas-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Matemáticas",
-      "unidad": "Tema 3",
-      "titulo": "Matemáticas: Problemas y repaso",
-      "enlace": "assets/fichas/5o-matematicas-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Lengua",
-      "unidad": "Tema 1",
-      "titulo": "Lengua: Ortografía: B y V",
-      "enlace": "assets/fichas/5o-lengua-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Lengua",
-      "unidad": "Tema 2",
-      "titulo": "Lengua: Ortografía: LL y Y",
-      "enlace": "assets/fichas/5o-lengua-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Lengua",
-      "unidad": "Tema 3",
-      "titulo": "Lengua: Acentuación",
-      "enlace": "assets/fichas/5o-lengua-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Inglés",
-      "unidad": "Tema 1",
-      "titulo": "Inglés: Colores",
-      "enlace": "assets/fichas/5o-ingles-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Inglés",
-      "unidad": "Tema 2",
-      "titulo": "Inglés: Animales",
-      "enlace": "assets/fichas/5o-ingles-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Inglés",
-      "unidad": "Tema 3",
-      "titulo": "Inglés: Números y familia",
-      "enlace": "assets/fichas/5o-ingles-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 1",
-      "titulo": "Conocimiento del medio: Seres vivos",
-      "enlace": "assets/fichas/5o-conocimiento-del-medio-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 2",
-      "titulo": "Conocimiento del medio: El cuerpo humano",
-      "enlace": "assets/fichas/5o-conocimiento-del-medio-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "5º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 3",
-      "titulo": "Conocimiento del medio: El agua y el tiempo",
-      "enlace": "assets/fichas/5o-conocimiento-del-medio-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Matemáticas",
-      "unidad": "Tema 1",
-      "titulo": "Matemáticas: Números y cuentas",
-      "enlace": "assets/fichas/6o-matematicas-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Matemáticas",
-      "unidad": "Tema 2",
-      "titulo": "Matemáticas: Operaciones",
-      "enlace": "assets/fichas/6o-matematicas-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Matemáticas",
-      "unidad": "Tema 3",
-      "titulo": "Matemáticas: Problemas y repaso",
-      "enlace": "assets/fichas/6o-matematicas-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Lengua",
-      "unidad": "Tema 1",
-      "titulo": "Lengua: Ortografía: B y V",
-      "enlace": "assets/fichas/6o-lengua-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Lengua",
-      "unidad": "Tema 2",
-      "titulo": "Lengua: Ortografía: LL y Y",
-      "enlace": "assets/fichas/6o-lengua-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Lengua",
-      "unidad": "Tema 3",
-      "titulo": "Lengua: Acentuación",
-      "enlace": "assets/fichas/6o-lengua-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Inglés",
-      "unidad": "Tema 1",
-      "titulo": "Inglés: Colores",
-      "enlace": "assets/fichas/6o-ingles-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Inglés",
-      "unidad": "Tema 2",
-      "titulo": "Inglés: Animales",
-      "enlace": "assets/fichas/6o-ingles-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Inglés",
-      "unidad": "Tema 3",
-      "titulo": "Inglés: Números y familia",
-      "enlace": "assets/fichas/6o-ingles-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 1",
-      "titulo": "Conocimiento del medio: Seres vivos",
-      "enlace": "assets/fichas/6o-conocimiento-del-medio-tema-1.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 2",
-      "titulo": "Conocimiento del medio: El cuerpo humano",
-      "enlace": "assets/fichas/6o-conocimiento-del-medio-tema-2.html",
-      "tipo": "Interactiva"
-    },
-    {
-      "curso": "6º",
-      "area": "Conocimiento del medio",
-      "unidad": "Tema 3",
-      "titulo": "Conocimiento del medio: El agua y el tiempo",
-      "enlace": "assets/fichas/6o-conocimiento-del-medio-tema-3.html",
-      "tipo": "Interactiva"
-    },
-    {
       "curso": "3 años",
       "area": "Números y cantidades",
       "unidad": "Tema 1",
-      "titulo": "Números y cantidades: ficha 1",
-      "enlace": "assets/fichas/3-anos-numeros-y-cantidades-tema-1.html",
+      "titulo": "Contamos con amigos",
+      "enlace": "assets/fichas-v3/3-anos-numeros-y-cantidades-tema-1.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "3 años",
       "area": "Números y cantidades",
       "unidad": "Tema 2",
-      "titulo": "Números y cantidades: ficha 2",
-      "enlace": "assets/fichas/3-anos-numeros-y-cantidades-tema-2.html",
+      "titulo": "Más y menos",
+      "enlace": "assets/fichas-v3/3-anos-numeros-y-cantidades-tema-2.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "3 años",
       "area": "Números y cantidades",
       "unidad": "Tema 3",
-      "titulo": "Números y cantidades: ficha 3",
-      "enlace": "assets/fichas/3-anos-numeros-y-cantidades-tema-3.html",
+      "titulo": "Cuántos hay en la granja",
+      "enlace": "assets/fichas-v3/3-anos-numeros-y-cantidades-tema-3.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "3 años",
       "area": "Letras",
       "unidad": "Tema 1",
-      "titulo": "Letras: ficha 1",
-      "enlace": "assets/fichas/3-anos-letras-tema-1.html",
+      "titulo": "Las vocales de la aventura",
+      "enlace": "assets/fichas-v3/3-anos-letras-tema-1.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "3 años",
       "area": "Letras",
       "unidad": "Tema 2",
-      "titulo": "Letras: ficha 2",
-      "enlace": "assets/fichas/3-anos-letras-tema-2.html",
+      "titulo": "Letras del barrio",
+      "enlace": "assets/fichas-v3/3-anos-letras-tema-2.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "3 años",
       "area": "Letras",
       "unidad": "Tema 3",
-      "titulo": "Letras: ficha 3",
-      "enlace": "assets/fichas/3-anos-letras-tema-3.html",
+      "titulo": "Sílabas en la mochila",
+      "enlace": "assets/fichas-v3/3-anos-letras-tema-3.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "3 años",
       "area": "Colores y formas",
       "unidad": "Tema 1",
-      "titulo": "Colores y formas: ficha 1",
-      "enlace": "assets/fichas/3-anos-colores-y-formas-tema-1.html",
+      "titulo": "Colores del arcoíris",
+      "enlace": "assets/fichas-v3/3-anos-colores-y-formas-tema-1.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "3 años",
       "area": "Colores y formas",
       "unidad": "Tema 2",
-      "titulo": "Colores y formas: ficha 2",
-      "enlace": "assets/fichas/3-anos-colores-y-formas-tema-2.html",
+      "titulo": "Formas en la ciudad",
+      "enlace": "assets/fichas-v3/3-anos-colores-y-formas-tema-2.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "3 años",
       "area": "Colores y formas",
       "unidad": "Tema 3",
-      "titulo": "Colores y formas: ficha 3",
-      "enlace": "assets/fichas/3-anos-colores-y-formas-tema-3.html",
+      "titulo": "Grande, pequeño y alto",
+      "enlace": "assets/fichas-v3/3-anos-colores-y-formas-tema-3.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "4 años",
       "area": "Números y cantidades",
       "unidad": "Tema 1",
-      "titulo": "Números y cantidades: ficha 1",
-      "enlace": "assets/fichas/4-anos-numeros-y-cantidades-tema-1.html",
+      "titulo": "Contamos con amigos",
+      "enlace": "assets/fichas-v3/4-anos-numeros-y-cantidades-tema-1.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "4 años",
       "area": "Números y cantidades",
       "unidad": "Tema 2",
-      "titulo": "Números y cantidades: ficha 2",
-      "enlace": "assets/fichas/4-anos-numeros-y-cantidades-tema-2.html",
+      "titulo": "Más y menos",
+      "enlace": "assets/fichas-v3/4-anos-numeros-y-cantidades-tema-2.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "4 años",
       "area": "Números y cantidades",
       "unidad": "Tema 3",
-      "titulo": "Números y cantidades: ficha 3",
-      "enlace": "assets/fichas/4-anos-numeros-y-cantidades-tema-3.html",
+      "titulo": "Cuántos hay en la granja",
+      "enlace": "assets/fichas-v3/4-anos-numeros-y-cantidades-tema-3.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "4 años",
       "area": "Letras",
       "unidad": "Tema 1",
-      "titulo": "Letras: ficha 1",
-      "enlace": "assets/fichas/4-anos-letras-tema-1.html",
+      "titulo": "Las vocales de la aventura",
+      "enlace": "assets/fichas-v3/4-anos-letras-tema-1.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "4 años",
       "area": "Letras",
       "unidad": "Tema 2",
-      "titulo": "Letras: ficha 2",
-      "enlace": "assets/fichas/4-anos-letras-tema-2.html",
+      "titulo": "Letras del barrio",
+      "enlace": "assets/fichas-v3/4-anos-letras-tema-2.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "4 años",
       "area": "Letras",
       "unidad": "Tema 3",
-      "titulo": "Letras: ficha 3",
-      "enlace": "assets/fichas/4-anos-letras-tema-3.html",
+      "titulo": "Sílabas en la mochila",
+      "enlace": "assets/fichas-v3/4-anos-letras-tema-3.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "4 años",
       "area": "Colores y formas",
       "unidad": "Tema 1",
-      "titulo": "Colores y formas: ficha 1",
-      "enlace": "assets/fichas/4-anos-colores-y-formas-tema-1.html",
+      "titulo": "Colores del arcoíris",
+      "enlace": "assets/fichas-v3/4-anos-colores-y-formas-tema-1.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "4 años",
       "area": "Colores y formas",
       "unidad": "Tema 2",
-      "titulo": "Colores y formas: ficha 2",
-      "enlace": "assets/fichas/4-anos-colores-y-formas-tema-2.html",
+      "titulo": "Formas en la ciudad",
+      "enlace": "assets/fichas-v3/4-anos-colores-y-formas-tema-2.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "4 años",
       "area": "Colores y formas",
       "unidad": "Tema 3",
-      "titulo": "Colores y formas: ficha 3",
-      "enlace": "assets/fichas/4-anos-colores-y-formas-tema-3.html",
+      "titulo": "Grande, pequeño y alto",
+      "enlace": "assets/fichas-v3/4-anos-colores-y-formas-tema-3.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "5 años",
       "area": "Números y cantidades",
       "unidad": "Tema 1",
-      "titulo": "Números y cantidades: ficha 1",
-      "enlace": "assets/fichas/5-anos-numeros-y-cantidades-tema-1.html",
+      "titulo": "Contamos con amigos",
+      "enlace": "assets/fichas-v3/5-anos-numeros-y-cantidades-tema-1.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "5 años",
       "area": "Números y cantidades",
       "unidad": "Tema 2",
-      "titulo": "Números y cantidades: ficha 2",
-      "enlace": "assets/fichas/5-anos-numeros-y-cantidades-tema-2.html",
+      "titulo": "Más y menos",
+      "enlace": "assets/fichas-v3/5-anos-numeros-y-cantidades-tema-2.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "5 años",
       "area": "Números y cantidades",
       "unidad": "Tema 3",
-      "titulo": "Números y cantidades: ficha 3",
-      "enlace": "assets/fichas/5-anos-numeros-y-cantidades-tema-3.html",
+      "titulo": "Cuántos hay en la granja",
+      "enlace": "assets/fichas-v3/5-anos-numeros-y-cantidades-tema-3.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "5 años",
       "area": "Letras",
       "unidad": "Tema 1",
-      "titulo": "Letras: ficha 1",
-      "enlace": "assets/fichas/5-anos-letras-tema-1.html",
+      "titulo": "Las vocales de la aventura",
+      "enlace": "assets/fichas-v3/5-anos-letras-tema-1.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "5 años",
       "area": "Letras",
       "unidad": "Tema 2",
-      "titulo": "Letras: ficha 2",
-      "enlace": "assets/fichas/5-anos-letras-tema-2.html",
+      "titulo": "Letras del barrio",
+      "enlace": "assets/fichas-v3/5-anos-letras-tema-2.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "5 años",
       "area": "Letras",
       "unidad": "Tema 3",
-      "titulo": "Letras: ficha 3",
-      "enlace": "assets/fichas/5-anos-letras-tema-3.html",
+      "titulo": "Sílabas en la mochila",
+      "enlace": "assets/fichas-v3/5-anos-letras-tema-3.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "5 años",
       "area": "Colores y formas",
       "unidad": "Tema 1",
-      "titulo": "Colores y formas: ficha 1",
-      "enlace": "assets/fichas/5-anos-colores-y-formas-tema-1.html",
+      "titulo": "Colores del arcoíris",
+      "enlace": "assets/fichas-v3/5-anos-colores-y-formas-tema-1.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "5 años",
       "area": "Colores y formas",
       "unidad": "Tema 2",
-      "titulo": "Colores y formas: ficha 2",
-      "enlace": "assets/fichas/5-anos-colores-y-formas-tema-2.html",
+      "titulo": "Formas en la ciudad",
+      "enlace": "assets/fichas-v3/5-anos-colores-y-formas-tema-2.html",
       "tipo": "Interactiva"
     },
     {
       "curso": "5 años",
       "area": "Colores y formas",
       "unidad": "Tema 3",
-      "titulo": "Colores y formas: ficha 3",
-      "enlace": "assets/fichas/5-anos-colores-y-formas-tema-3.html",
+      "titulo": "Grande, pequeño y alto",
+      "enlace": "assets/fichas-v3/5-anos-colores-y-formas-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Matemáticas",
+      "unidad": "Tema 1",
+      "titulo": "Sumamos y restamos",
+      "enlace": "assets/fichas-v3/1o-matematicas-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Matemáticas",
+      "unidad": "Tema 2",
+      "titulo": "Tablas y repartos",
+      "enlace": "assets/fichas-v3/1o-matematicas-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Matemáticas",
+      "unidad": "Tema 3",
+      "titulo": "Problemas y repaso",
+      "enlace": "assets/fichas-v3/1o-matematicas-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Lengua",
+      "unidad": "Tema 1",
+      "titulo": "Ortografía: B, V, LL, Y",
+      "enlace": "assets/fichas-v3/1o-lengua-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Lengua",
+      "unidad": "Tema 2",
+      "titulo": "Palabras y sus parientes",
+      "enlace": "assets/fichas-v3/1o-lengua-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Lengua",
+      "unidad": "Tema 3",
+      "titulo": "Gramática con dibujos",
+      "enlace": "assets/fichas-v3/1o-lengua-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Inglés",
+      "unidad": "Tema 1",
+      "titulo": "Colores y animales en inglés",
+      "enlace": "assets/fichas-v3/1o-ingles-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Inglés",
+      "unidad": "Tema 2",
+      "titulo": "Comida, cuerpo y ropa",
+      "enlace": "assets/fichas-v3/1o-ingles-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Inglés",
+      "unidad": "Tema 3",
+      "titulo": "Tiempo, rutinas y lugares",
+      "enlace": "assets/fichas-v3/1o-ingles-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 1",
+      "titulo": "Animales, plantas y sentidos",
+      "enlace": "assets/fichas-v3/1o-conocimiento-del-medio-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 2",
+      "titulo": "Materiales y energía",
+      "enlace": "assets/fichas-v3/1o-conocimiento-del-medio-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "1º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 3",
+      "titulo": "Ecosistemas, planetas y máquinas",
+      "enlace": "assets/fichas-v3/1o-conocimiento-del-medio-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Matemáticas",
+      "unidad": "Tema 1",
+      "titulo": "Sumamos y restamos",
+      "enlace": "assets/fichas-v3/2o-matematicas-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Matemáticas",
+      "unidad": "Tema 2",
+      "titulo": "Tablas y repartos",
+      "enlace": "assets/fichas-v3/2o-matematicas-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Matemáticas",
+      "unidad": "Tema 3",
+      "titulo": "Problemas y repaso",
+      "enlace": "assets/fichas-v3/2o-matematicas-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Lengua",
+      "unidad": "Tema 1",
+      "titulo": "Ortografía: B, V, LL, Y",
+      "enlace": "assets/fichas-v3/2o-lengua-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Lengua",
+      "unidad": "Tema 2",
+      "titulo": "Palabras y sus parientes",
+      "enlace": "assets/fichas-v3/2o-lengua-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Lengua",
+      "unidad": "Tema 3",
+      "titulo": "Gramática con dibujos",
+      "enlace": "assets/fichas-v3/2o-lengua-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Inglés",
+      "unidad": "Tema 1",
+      "titulo": "Colores y animales en inglés",
+      "enlace": "assets/fichas-v3/2o-ingles-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Inglés",
+      "unidad": "Tema 2",
+      "titulo": "Comida, cuerpo y ropa",
+      "enlace": "assets/fichas-v3/2o-ingles-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Inglés",
+      "unidad": "Tema 3",
+      "titulo": "Tiempo, rutinas y lugares",
+      "enlace": "assets/fichas-v3/2o-ingles-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 1",
+      "titulo": "Animales, plantas y sentidos",
+      "enlace": "assets/fichas-v3/2o-conocimiento-del-medio-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 2",
+      "titulo": "Materiales y energía",
+      "enlace": "assets/fichas-v3/2o-conocimiento-del-medio-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "2º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 3",
+      "titulo": "Ecosistemas, planetas y máquinas",
+      "enlace": "assets/fichas-v3/2o-conocimiento-del-medio-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Matemáticas",
+      "unidad": "Tema 1",
+      "titulo": "Sumamos y restamos",
+      "enlace": "assets/fichas-v3/3o-matematicas-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Matemáticas",
+      "unidad": "Tema 2",
+      "titulo": "Tablas y repartos",
+      "enlace": "assets/fichas-v3/3o-matematicas-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Matemáticas",
+      "unidad": "Tema 3",
+      "titulo": "Problemas y repaso",
+      "enlace": "assets/fichas-v3/3o-matematicas-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Lengua",
+      "unidad": "Tema 1",
+      "titulo": "Ortografía: B, V, LL, Y",
+      "enlace": "assets/fichas-v3/3o-lengua-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Lengua",
+      "unidad": "Tema 2",
+      "titulo": "Palabras y sus parientes",
+      "enlace": "assets/fichas-v3/3o-lengua-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Lengua",
+      "unidad": "Tema 3",
+      "titulo": "Gramática con dibujos",
+      "enlace": "assets/fichas-v3/3o-lengua-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Inglés",
+      "unidad": "Tema 1",
+      "titulo": "Colores y animales en inglés",
+      "enlace": "assets/fichas-v3/3o-ingles-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Inglés",
+      "unidad": "Tema 2",
+      "titulo": "Comida, cuerpo y ropa",
+      "enlace": "assets/fichas-v3/3o-ingles-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Inglés",
+      "unidad": "Tema 3",
+      "titulo": "Tiempo, rutinas y lugares",
+      "enlace": "assets/fichas-v3/3o-ingles-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 1",
+      "titulo": "Animales, plantas y sentidos",
+      "enlace": "assets/fichas-v3/3o-conocimiento-del-medio-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 2",
+      "titulo": "Materiales y energía",
+      "enlace": "assets/fichas-v3/3o-conocimiento-del-medio-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "3º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 3",
+      "titulo": "Ecosistemas, planetas y máquinas",
+      "enlace": "assets/fichas-v3/3o-conocimiento-del-medio-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Matemáticas",
+      "unidad": "Tema 1",
+      "titulo": "Sumamos y restamos",
+      "enlace": "assets/fichas-v3/4o-matematicas-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Matemáticas",
+      "unidad": "Tema 2",
+      "titulo": "Tablas y repartos",
+      "enlace": "assets/fichas-v3/4o-matematicas-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Matemáticas",
+      "unidad": "Tema 3",
+      "titulo": "Problemas y repaso",
+      "enlace": "assets/fichas-v3/4o-matematicas-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Lengua",
+      "unidad": "Tema 1",
+      "titulo": "Ortografía: B, V, LL, Y",
+      "enlace": "assets/fichas-v3/4o-lengua-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Lengua",
+      "unidad": "Tema 2",
+      "titulo": "Palabras y sus parientes",
+      "enlace": "assets/fichas-v3/4o-lengua-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Lengua",
+      "unidad": "Tema 3",
+      "titulo": "Gramática con dibujos",
+      "enlace": "assets/fichas-v3/4o-lengua-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Inglés",
+      "unidad": "Tema 1",
+      "titulo": "Colores y animales en inglés",
+      "enlace": "assets/fichas-v3/4o-ingles-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Inglés",
+      "unidad": "Tema 2",
+      "titulo": "Comida, cuerpo y ropa",
+      "enlace": "assets/fichas-v3/4o-ingles-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Inglés",
+      "unidad": "Tema 3",
+      "titulo": "Tiempo, rutinas y lugares",
+      "enlace": "assets/fichas-v3/4o-ingles-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 1",
+      "titulo": "Animales, plantas y sentidos",
+      "enlace": "assets/fichas-v3/4o-conocimiento-del-medio-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 2",
+      "titulo": "Materiales y energía",
+      "enlace": "assets/fichas-v3/4o-conocimiento-del-medio-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "4º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 3",
+      "titulo": "Ecosistemas, planetas y máquinas",
+      "enlace": "assets/fichas-v3/4o-conocimiento-del-medio-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Matemáticas",
+      "unidad": "Tema 1",
+      "titulo": "Sumamos y restamos",
+      "enlace": "assets/fichas-v3/5o-matematicas-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Matemáticas",
+      "unidad": "Tema 2",
+      "titulo": "Tablas y repartos",
+      "enlace": "assets/fichas-v3/5o-matematicas-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Matemáticas",
+      "unidad": "Tema 3",
+      "titulo": "Problemas y repaso",
+      "enlace": "assets/fichas-v3/5o-matematicas-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Lengua",
+      "unidad": "Tema 1",
+      "titulo": "Ortografía: B, V, LL, Y",
+      "enlace": "assets/fichas-v3/5o-lengua-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Lengua",
+      "unidad": "Tema 2",
+      "titulo": "Palabras y sus parientes",
+      "enlace": "assets/fichas-v3/5o-lengua-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Lengua",
+      "unidad": "Tema 3",
+      "titulo": "Gramática con dibujos",
+      "enlace": "assets/fichas-v3/5o-lengua-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Inglés",
+      "unidad": "Tema 1",
+      "titulo": "Colores y animales en inglés",
+      "enlace": "assets/fichas-v3/5o-ingles-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Inglés",
+      "unidad": "Tema 2",
+      "titulo": "Comida, cuerpo y ropa",
+      "enlace": "assets/fichas-v3/5o-ingles-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Inglés",
+      "unidad": "Tema 3",
+      "titulo": "Tiempo, rutinas y lugares",
+      "enlace": "assets/fichas-v3/5o-ingles-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 1",
+      "titulo": "Animales, plantas y sentidos",
+      "enlace": "assets/fichas-v3/5o-conocimiento-del-medio-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 2",
+      "titulo": "Materiales y energía",
+      "enlace": "assets/fichas-v3/5o-conocimiento-del-medio-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "5º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 3",
+      "titulo": "Ecosistemas, planetas y máquinas",
+      "enlace": "assets/fichas-v3/5o-conocimiento-del-medio-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Matemáticas",
+      "unidad": "Tema 1",
+      "titulo": "Sumamos y restamos",
+      "enlace": "assets/fichas-v3/6o-matematicas-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Matemáticas",
+      "unidad": "Tema 2",
+      "titulo": "Tablas y repartos",
+      "enlace": "assets/fichas-v3/6o-matematicas-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Matemáticas",
+      "unidad": "Tema 3",
+      "titulo": "Problemas y repaso",
+      "enlace": "assets/fichas-v3/6o-matematicas-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Lengua",
+      "unidad": "Tema 1",
+      "titulo": "Ortografía: B, V, LL, Y",
+      "enlace": "assets/fichas-v3/6o-lengua-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Lengua",
+      "unidad": "Tema 2",
+      "titulo": "Palabras y sus parientes",
+      "enlace": "assets/fichas-v3/6o-lengua-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Lengua",
+      "unidad": "Tema 3",
+      "titulo": "Gramática con dibujos",
+      "enlace": "assets/fichas-v3/6o-lengua-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Inglés",
+      "unidad": "Tema 1",
+      "titulo": "Colores y animales en inglés",
+      "enlace": "assets/fichas-v3/6o-ingles-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Inglés",
+      "unidad": "Tema 2",
+      "titulo": "Comida, cuerpo y ropa",
+      "enlace": "assets/fichas-v3/6o-ingles-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Inglés",
+      "unidad": "Tema 3",
+      "titulo": "Tiempo, rutinas y lugares",
+      "enlace": "assets/fichas-v3/6o-ingles-tema-3.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 1",
+      "titulo": "Animales, plantas y sentidos",
+      "enlace": "assets/fichas-v3/6o-conocimiento-del-medio-tema-1.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 2",
+      "titulo": "Materiales y energía",
+      "enlace": "assets/fichas-v3/6o-conocimiento-del-medio-tema-2.html",
+      "tipo": "Interactiva"
+    },
+    {
+      "curso": "6º",
+      "area": "Conocimiento del medio",
+      "unidad": "Tema 3",
+      "titulo": "Ecosistemas, planetas y máquinas",
+      "enlace": "assets/fichas-v3/6o-conocimiento-del-medio-tema-3.html",
       "tipo": "Interactiva"
     }
   ]
