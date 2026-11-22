@@ -1,93 +1,75 @@
 {
   "items": [
     {
-      "nombre": "CIMA",
-      "grupo": "Programas de la Consejería",
-      "emoji": "🌿",
-      "resumen": "Cuidamos el medio ambiente.",
-      "detalle": "Texto de ejemplo: describe aquí objetivos y actividades.",
-      "coordina": "Coordinación del programa",
-      "enlace": ""
-    },
-    {
-      "nombre": "Creciendo en Salud",
-      "grupo": "Programas de la Consejería",
-      "emoji": "🍏",
-      "resumen": "Hábitos de vida saludables.",
-      "detalle": "Texto de ejemplo.",
-      "coordina": "Coordinación del programa",
-      "enlace": ""
-    },
-    {
-      "nombre": "Plan de Igualdad",
-      "grupo": "Programas de la Consejería",
-      "emoji": "⚖️",
-      "resumen": "Coeducación e igualdad.",
-      "detalle": "Texto de ejemplo.",
-      "coordina": "Coordinación del programa",
-      "enlace": ""
-    },
-    {
-      "nombre": "Convivencia+",
-      "grupo": "Programas de la Consejería",
-      "emoji": "🤝",
-      "resumen": "Buen trato y mediación.",
-      "detalle": "Texto de ejemplo.",
-      "coordina": "Coordinación del programa",
-      "enlace": ""
-    },
-    {
-      "nombre": "Bilingüismo",
+      "nombre": "Plan de convivencia",
       "grupo": "Proyectos del centro",
-      "emoji": "🇬🇧",
-      "resumen": "Aprender en inglés.",
-      "detalle": "Texto de ejemplo.",
-      "coordina": "Coordinación del programa",
+      "emoji": "🤝",
+      "resumen": "Normas claras, resolución de conflictos y mediación entre iguales.",
+      "detalle": "El plan de convivencia recoge las normas del centro y el procedimiento para resolver los conflictos. Cada aula trabaja al comienzo de curso los acuerdos de clase, y el alumnado de 5º y 6º forma parte del equipo de mediación en el patio.\n\nLas familias pueden consultar el documento completo en secretaría y recibir información en las reuniones de inicio de curso.",
+      "coordina": "Jefatura de estudios",
+      "enlace": ""
+    },
+    {
+      "nombre": "Plan lector",
+      "grupo": "Proyectos del centro",
+      "emoji": "📚",
+      "resumen": "Un tiempo diario de lectura y un club de lectura por etapas.",
+      "detalle": "El plan lector dedica quince minutos diarios a la lectura en todas las etapas. En Infantil se trabaja con cuentos y rimas; en Primaria, con clubes de lectura en los que los alumnos recomiendan libros a sus compañeros.\n\nLa biblioteca del centro presta libros cada semana, y las familias pueden colaborar con lecturas en casa.",
+      "coordina": "Equipo de biblioteca",
       "enlace": ""
     },
     {
       "nombre": "Huerto escolar",
       "grupo": "Proyectos del centro",
       "emoji": "🥕",
-      "resumen": "Aprender cultivando.",
-      "detalle": "Texto de ejemplo.",
-      "coordina": "Coordinación del programa",
+      "resumen": "Ciencias, matemáticas y responsabilidad con las plantas.",
+      "detalle": "El huerto escolar es un proyecto de aula en el que los alumnos siembran, riegan y observan el crecimiento de las plantas. Trabajan la medida, la estadística y el cuidado del medio ambiente.\n\nLos sábados por la mañana se organiza un turno de cuidado abierto a las familias.",
+      "coordina": "Tutores de 3º",
       "enlace": ""
     },
     {
-      "nombre": "PIEFCITOS",
-      "grupo": "Proyectos del centro",
-      "emoji": "🏃",
-      "resumen": "Educación física inclusiva.",
-      "detalle": "Texto de ejemplo.",
-      "coordina": "Coordinación del programa",
+      "nombre": "Escuela de familias",
+      "grupo": "Formación de familias",
+      "emoji": "👨‍👩‍👧",
+      "resumen": "Charlas y talleres sobre hábitos, pantallas y convivencia.",
+      "detalle": "La escuela de familias organiza al año cuatro sesiones abiertas: hábitos de sueño, uso de pantallas, comunicación en casa y acompañamiento en los deberes. Son charlas breves, de unos cuarenta minutos, con tiempo para preguntas.\n\nLas fechas se anuncian en la sección de avisos y en el calendario.",
+      "coordina": "Orientación",
       "enlace": ""
     },
     {
-      "nombre": "Digicraft",
+      "nombre": "Plan digital",
       "grupo": "Proyectos del centro",
       "emoji": "💻",
-      "resumen": "Competencia digital.",
-      "detalle": "Texto de ejemplo.",
-      "coordina": "Coordinación del programa",
+      "resumen": "Uso responsable de la tecnología y competencia digital.",
+      "detalle": "El plan digital integra la tecnología en las clases sin sustituir la escritura a mano ni el juego libre. En Primaria se trabajan la búsqueda de información, la seguridad en internet y la creación sencilla de contenidos.\n\nLas familias reciben cada trimestre una guía con consejos para usar dispositivos en casa.",
+      "coordina": "Coordinación TIC",
       "enlace": ""
     },
     {
-      "nombre": "Escuela 4.0",
+      "nombre": "Bilingüismo",
       "grupo": "Proyectos del centro",
-      "emoji": "📡",
-      "resumen": "Tecnología en el aula.",
-      "detalle": "Texto de ejemplo.",
-      "coordina": "Coordinación del programa",
+      "emoji": "🌍",
+      "resumen": "Inglés en Infantil y Primaria con canciones, juegos y proyectos.",
+      "detalle": "El programa de inglés incluye canciones, juegos de movimiento y pequeños proyectos. En Infantil el vocabulario se trabaja de forma oral; en Primaria se añaden lectura y escritura sencillas.\n\nLos alumnos participan cada año en una pequeña exposición en inglés para las familias.",
+      "coordina": "Departamento de Inglés",
       "enlace": ""
     },
     {
-      "nombre": "Erasmus+",
-      "grupo": "Proyectos europeos",
-      "emoji": "🇪🇺",
-      "resumen": "Intercambios con otros países.",
-      "detalle": "Texto de ejemplo.",
-      "coordina": "Coordinación del programa",
+      "nombre": "Educación emocional",
+      "grupo": "Planes",
+      "emoji": "💛",
+      "resumen": "Reconocer emociones, gestionarlas y cuidar la convivencia.",
+      "detalle": "El programa de educación emocional trabaja cada semana una emoción diferente: alegría, enfado, miedo o tristeza. Los alumnos aprenden a reconocer lo que sienten y a pedir ayuda cuando lo necesitan.\n\nEn Infantil se usan cuentos y juegos de rol; en Primaria, diarios de emociones y asambleas de clase.",
+      "coordina": "Orientación",
+      "enlace": ""
+    },
+    {
+      "nombre": "Plan de igualdad",
+      "grupo": "Planes",
+      "emoji": "⚖️",
+      "resumen": "Respeto, igualdad de oportunidades y lucha contra los estereotipos.",
+      "detalle": "El plan de igualdad revisa los materiales del aula, las actividades de patio y la comunicación con las familias para evitar estereotipos. Cada curso se organiza una actividad especial en torno a una fecha significativa.\n\nEl plan se revisa cada trimestre con el claustro y el consejo escolar.",
+      "coordina": "Equipo directivo",
       "enlace": ""
     }
   ]

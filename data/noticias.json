@@ -2,91 +2,103 @@
   "items": [
     {
       "fecha": "2026-11-19",
-      "titulo": "Roque estrena el rincón de lectura",
-      "resumen": "La biblioteca estrena sillones y cojines para leer en los recreos.",
+      "titulo": "El rincón de lectura de la biblioteca ya está abierto",
+      "resumen": "Sillones, cojines y estanterías nuevas para leer en los recreos, gracias a la colaboración de las familias.",
       "etiqueta": "Biblioteca",
       "emoji": "📚",
+      "imagen": "assets/demo/n1.svg",
       "enlace": "",
       "estado": "Portada",
-      "texto": "",
-      "imagen": ""
+      "texto": "Desde este lunes, la biblioteca del colegio cuenta con un rincón de lectura pensado para los recreos. Tiene dos sillones bajos, una alfombra de colores y estanterías a la altura de los niños de Infantil, para que puedan elegir sus propios libros sin ayuda.\n\nEl proyecto empezó en septiembre, cuando el equipo de biblioteca preguntó a las familias qué les gustaría ver en el colegio. Muchas respuestas coincidían: un lugar tranquilo donde leer sin prisas. Con esa idea se diseñó el espacio, que se ha montado durante dos tardes gracias a varias familias voluntarias.\n\nRoque, nuestra mascota lectora, ha sido el encargado de inaugurar el rincón. Los alumnos de 1º y 2º han preparado una lectura de cuentos para estrenarlo, y el próximo viernes se repetirá para los más pequeños. Si quieres colaborar con donaciones de libros infantiles, pregunta en secretaría.",
+      "galeria": [
+        {
+          "foto": "assets/demo/g1.svg"
+        },
+        {
+          "foto": "assets/demo/g4.svg"
+        }
+      ],
+      "enlaces": []
     },
     {
       "fecha": "2026-11-17",
-      "titulo": "Recogida de alimentos solidaria",
-      "resumen": "Todas las clases han llenado las cajas del pasillo.",
+      "titulo": "Recogida solidaria de alimentos: todas las clases llenaron sus cajas",
+      "resumen": "Más de 400 kilos de alimentos entregados a la asociación del barrio antes del fin de semana.",
       "etiqueta": "Solidaridad",
       "emoji": "🥫",
+      "imagen": "assets/demo/n2.svg",
       "enlace": "",
       "estado": "Portada",
-      "texto": "",
-      "imagen": ""
+      "texto": "Durante dos semanas, cada clase ha ido llenando una caja con alimentos no perecederos. Las cajas se han colocado en el pasillo principal, y cada mañana los alumnos de 6º las revisaban y anotaban lo que llegaba.\n\nEl resultado ha superado las previsiones: más de 400 kilos de alimentos, entre legumbres, aceite, leche y conservas. La entrega se hizo el jueves a la asociación del barrio, que reparte a familias que lo necesitan. Los alumnos quisieron acompañar la entrega y hablar con los voluntarios sobre cómo funciona el reparto.\n\nDesde el equipo docente agradecemos la implicación de todas las familias. La idea es repetir la recogida antes de Navidad, con una lista de productos más amplia.",
+      "galeria": [
+        {
+          "foto": "assets/demo/g1.svg"
+        },
+        {
+          "foto": "assets/demo/g3.svg"
+        },
+        {
+          "foto": "assets/demo/g5.svg"
+        }
+      ],
+      "enlaces": [
+        {
+          "texto": "Asociación de vecinos del barrio",
+          "url": "https://ejemplo.org"
+        }
+      ]
     },
     {
       "fecha": "2026-11-14",
-      "titulo": "Simulacro de evacuación",
-      "resumen": "Salimos del edificio en menos de tres minutos. ¡Enhorabuena!",
+      "titulo": "Simulacro de evacuación: salimos en menos de tres minutos",
+      "resumen": "Todo el colegio desalojó el edificio con calma y en silencio, siguiendo las rutas de la señalización.",
       "etiqueta": "Seguridad",
       "emoji": "🚸",
+      "imagen": "assets/demo/n3.svg",
       "enlace": "",
       "estado": "Portada",
-      "texto": "",
-      "imagen": ""
+      "texto": "El martes a las 11:15 sonó la señal de alarma y todo el colegio, desde Infantil hasta 6º, salió al patio siguiendo las rutas marcadas. El simulacro tenía un objetivo claro: comprobar que el alumnado sabe qué hacer ante una emergencia y que las rutas funcionan.\n\nEl tiempo total fue de dos minutos y cincuenta segundos desde la señal hasta que la última clase llegó al punto de encuentro. Los responsables de cada aula pasaron lista y comprobaron que no faltaba nadie. Hubo un momento en el que una puerta del pasillo estaba más lenta de lo habitual, y el equipo de mantenimiento la revisará esta semana.\n\nDespués del simulacro, cada tutor comentó con su clase qué había ido bien y qué se puede mejorar. Gracias a todas las familias por respetar la indicación de no recoger a los alumnos durante el ejercicio.",
+      "galeria": [],
+      "enlaces": []
     },
     {
       "fecha": "2026-11-10",
-      "titulo": "Nuevo horario de tutorías",
-      "resumen": "Las tutorías con familias pasan a los martes por la tarde.",
+      "titulo": "Nuevo horario de tutorías con familias: los martes por la tarde",
+      "resumen": "A partir de enero, las tutorías con familias se concentran en la tarde de los martes, con cita previa.",
       "etiqueta": "Familias",
       "emoji": "🗓️",
+      "imagen": "assets/demo/n4.svg",
       "enlace": "",
-      "estado": "Portada",
-      "texto": "",
-      "imagen": ""
-    },
-    {
-      "fecha": "2026-11-05",
-      "titulo": "Arranca el huerto escolar",
-      "resumen": "Las clases de 3º plantan lechugas y ajos.",
-      "etiqueta": "Programas",
-      "emoji": "🥕",
-      "enlace": "",
-      "estado": "Portada",
-      "texto": "",
-      "imagen": ""
+      "estado": "Archivo",
+      "texto": "Tras revisar las encuestas del primer trimestre, el equipo directivo ha decidido cambiar el horario de atención a las familias. Las tutorías se concentrarán en la tarde de los martes, de 16:30 a 18:30, para facilitar que puedan asistir quienes trabajan por la mañana.\n\nPara pedir cita se usará el formulario de la web, en la sección de contacto, o el correo del centro. Cada cita durará veinte minutos, y se podrá pedir una segunda si el tutor lo considera necesario. Las citas urgentes se gestionarán por teléfono durante la jornada.\n\nEl cambio entra en vigor en enero. Hasta entonces, las tutorías de noviembre y diciembre mantienen el horario anterior.",
+      "galeria": [],
+      "enlaces": []
     },
     {
       "fecha": "2026-10-30",
-      "titulo": "Castañada en el patio",
-      "resumen": "Un recreo con castañas asadas y cuentos de miedo suave.",
-      "etiqueta": "Efemérides",
-      "emoji": "🌰",
+      "titulo": "Arranca el huerto escolar: las clases de 3º plantan lechugas y ajos",
+      "resumen": "Un proyecto de aula que une ciencias, matemáticas y paciencia, con ayuda de las familias.",
+      "etiqueta": "Programas",
+      "emoji": "🥕",
+      "imagen": "assets/demo/n5.svg",
       "enlace": "",
       "estado": "Archivo",
-      "texto": "",
-      "imagen": ""
+      "texto": "Las clases de 3º han preparado este otoño el huerto escolar, en el rincón junto a la pista. Han medido el terreno, han quitado las malas hierbas y han repartido las filas entre los grupos. Cada grupo es responsable de una zona y lleva un cuaderno con las observaciones.\n\nLas primeras plantas que se han sembrado son lechugas, ajos y habas. Los alumnos calculan cada semana cuánto han crecido y dibujan gráficas con los datos. Es una forma sencilla de trabajar la medida y la estadística en un contexto real.\n\nEl huerto está abierto a las familias que quieran colaborar los sábados por la mañana. Pide información a los tutores de 3º.",
+      "galeria": [],
+      "enlaces": []
     },
     {
-      "fecha": "2026-10-12",
-      "titulo": "Concurso de calabazas",
-      "resumen": "Más de cuarenta calabazas decoradas por las familias.",
+      "fecha": "2026-09-20",
+      "titulo": "Comienza el curso con más de cuarenta actividades de acogida",
+      "resumen": "Una semana de bienvenida con talleres, juegos y reuniones para empezar con buen pie.",
       "etiqueta": "Efemérides",
-      "emoji": "🎃",
+      "emoji": "🎒",
+      "imagen": "assets/demo/g2.svg",
       "enlace": "",
       "estado": "Archivo",
-      "texto": "",
-      "imagen": ""
-    },
-    {
-      "fecha": "2026-11-27",
-      "titulo": "Charla para familias: pantallas",
-      "resumen": "Escuela de familias sobre el uso saludable de móviles y tablets.",
-      "etiqueta": "Familias",
-      "emoji": "📱",
-      "enlace": "",
-      "estado": "Portada",
-      "texto": "",
-      "imagen": ""
+      "texto": "El primer día de clase, el patio se llenó de familias y de alumnos que querían encontrar a sus compañeros. Durante la primera semana, cada etapa organizó su propia programación de acogida, con juegos, presentaciones y visitas guiadas por el edificio.\n\nInfantil de 3 años tuvo su primera salida al patio con sus familias, y los alumnos de 6º prepararon una gymkana para conocer el colegio. Ha sido una semana intensa, pero con muy buen ambiente.\n\nGracias a todas las familias que participaron en las reuniones informativas y en la primera semana de adaptación.",
+      "galeria": [],
+      "enlaces": []
     }
   ]
 }

@@ -2,91 +2,103 @@
   "items": [
     {
       "fecha": "2026-11-18",
-      "titulo": "Aprendemos los estados del agua",
-      "texto": "En 3º hemos hecho hielo, vapor y nubes en un frasco.",
+      "titulo": "Aprendemos los estados del agua en 3º",
+      "resumen": "Hielo, vapor y nubes en un frasco: un experimento que los alumnos explicaron con sus propias palabras.",
       "etiqueta": "Primaria",
       "emoji": "💧",
+      "imagen": "assets/demo/b1.svg",
       "enlace": "",
       "estado": "Portada",
-      "resumen": "",
-      "imagen": ""
+      "texto": "En 3º hemos hecho un experimento sencillo: un frasco de agua caliente, otro con hielo encima y una tapa con una tira de papel. Los alumnos tenían que predecir qué pasaría con el vapor y dónde se formarían las gotas.\n\nAl cabo de unos minutos, las gotas aparecieron en la tapa, y los alumnos lo relacionaron con la formación de las nubes. Después dibujaron el ciclo del agua en un mural que ya está colgado en el pasillo de la primera planta.\n\nPara cerrar la experiencia, cada grupo elaboró un informe con sus conclusiones. Los alumnos de 3º explicaron por qué el vapor se condensa al tocar la tapa fría, y propusieron repetir el experimento con agua de distintas temperaturas.",
+      "galeria": [
+        {
+          "foto": "assets/demo/g1.svg"
+        },
+        {
+          "foto": "assets/demo/b2.svg"
+        }
+      ],
+      "enlaces": []
     },
     {
       "fecha": "2026-11-16",
-      "titulo": "Mi primera semana de fruta",
-      "texto": "En 4 años probamos fruta nueva cada día.",
+      "titulo": "Mi primera semana probando fruta nueva",
+      "resumen": "En 4 años, cada día se prueba una fruta diferente, y los niños van creando su propio ranking.",
       "etiqueta": "Infantil",
       "emoji": "🍎",
+      "imagen": "assets/demo/b2.svg",
       "enlace": "",
       "estado": "Portada",
-      "resumen": "",
-      "imagen": ""
+      "texto": "Esta semana, los alumnos de 4 años han probado una fruta nueva cada día: kiwi, granada, chirimoya, caqui y mango. Antes de probarla, la observan, la huelen y dicen qué les recuerda. Después, la prueban, y cada uno levanta la mano para decir si le ha gustado.\n\nAl final de la semana han hecho un ranking entre todos. El kiwi quedó primero, pero la granada tuvo muchos fans. La idea es que los niños pierdan el miedo a probar comida nueva, de forma divertida.\n\nLa semana terminó con una merienda compartida en el patio, donde los niños contaron a sus familias qué fruta les había gustado más. Muchas familias pidieron la receta de la ensalada de kiwi y granada que prepararon en clase.",
+      "galeria": [
+        {
+          "foto": "assets/demo/g5.svg"
+        },
+        {
+          "foto": "assets/demo/b3.svg"
+        }
+      ],
+      "enlaces": []
     },
     {
       "fecha": "2026-11-13",
-      "titulo": "Cuentacuentos con las abuelas",
-      "texto": "Las abuelas de 1º vinieron a contar leyendas de Torredonjimeno.",
+      "titulo": "Cuentacuentos con las abuelas de 1º",
+      "resumen": "Las abuelas del barrio vinieron a contar leyendas de Torredonjimeno en el salón de actos.",
       "etiqueta": "Biblioteca",
       "emoji": "👵",
+      "imagen": "assets/demo/b3.svg",
       "enlace": "",
       "estado": "Portada",
-      "resumen": "",
-      "imagen": ""
+      "texto": "El jueves, un grupo de abuelas del barrio visitó 1º para contar leyendas de Torredonjimeno. Hablaron de la historia del pueblo, de los lugares que los niños pasan cada día y de cómo se contaban los cuentos antes de la televisión.\n\nLos alumnos hicieron preguntas, dibujaron los personajes y, al final, cada uno se llevó una lámina con la leyenda que más le había gustado. Gracias a ellas por venir y compartir sus historias.\n\nAl terminar, los alumnos pidieron a las abuelas que volvieran el próximo trimestre. Algunas de ellas se han ofrecido a traer más historias de la huerta y de las fiestas del pueblo.",
+      "galeria": [
+        {
+          "foto": "assets/demo/g3.svg"
+        },
+        {
+          "foto": "assets/demo/b4.svg"
+        }
+      ],
+      "enlaces": []
     },
     {
       "fecha": "2026-11-09",
-      "titulo": "Inglés con canciones",
-      "texto": "Aprendemos los colores en inglés jugando.",
+      "titulo": "Inglés con canciones: los colores se aprenden cantando",
+      "resumen": "Las clases de inglés incorporan canciones cortas y juegos de movimiento.",
       "etiqueta": "Inglés",
       "emoji": "🎵",
+      "imagen": "assets/demo/b4.svg",
       "enlace": "",
       "estado": "Portada",
-      "resumen": "",
-      "imagen": ""
-    },
-    {
-      "fecha": "2026-11-04",
-      "titulo": "Los de 6º y su radio escolar",
-      "texto": "Primer programa de radio grabado por el alumnado.",
-      "etiqueta": "Primaria",
-      "emoji": "🎙️",
-      "enlace": "",
-      "estado": "Archivo",
-      "resumen": "",
-      "imagen": ""
+      "texto": "En las clases de inglés de Primaria e Infantil se están usando canciones cortas para aprender los colores. Cada color tiene su movimiento: el rojo se toca con la mano derecha, el azul con la izquierda, y así sucesivamente.\n\nLos profesores de inglés han notado que los alumnos recuerdan más vocabulario cuando lo cantan y lo mueven. Las canciones se pueden practicar también en casa, y el enlace está en el blog de aula.\n\nLas canciones se pueden escuchar en el blog de aula y en casa. Pedimos a las familias que las canten con sus hijos durante la cena, porque ayuda a fijar el vocabulario.",
+      "galeria": [
+        {
+          "foto": "assets/demo/g4.svg"
+        },
+        {
+          "foto": "assets/demo/b5.svg"
+        }
+      ],
+      "enlaces": []
     },
     {
       "fecha": "2026-10-28",
-      "titulo": "Taller de mosaicos",
-      "texto": "Inspirados en Gaudí, hicimos mosaicos con trozos de cerámica.",
+      "titulo": "Mosaicos inspirados en Gaudí",
+      "resumen": "Trozos de cerámica reciclada para crear un banco de colores en el patio.",
       "etiqueta": "Arte",
       "emoji": "🎨",
+      "imagen": "assets/demo/b5.svg",
       "enlace": "",
       "estado": "Archivo",
-      "resumen": "",
-      "imagen": ""
-    },
-    {
-      "fecha": "2026-10-20",
-      "titulo": "Salida al olivar",
-      "texto": "5 años vio cómo se recoge la aceituna.",
-      "etiqueta": "Infantil",
-      "emoji": "🫒",
-      "enlace": "",
-      "estado": "Archivo",
-      "resumen": "",
-      "imagen": ""
-    },
-    {
-      "fecha": "2026-10-08",
-      "titulo": "Bienvenida del curso",
-      "texto": "Un mes de rutinas y muchas sonrisas.",
-      "etiqueta": "Infantil",
-      "emoji": "😀",
-      "enlace": "",
-      "estado": "Archivo",
-      "resumen": "",
-      "imagen": ""
+      "texto": "Inspirados en el trencadís de Gaudí, los alumnos de 5º y 6º han trabajado con trozos de cerámica reciclada. Primero diseñaron el dibujo en papel, después lo trasladaron al cemento y lo fueron completando pieza a pieza.\n\nEl resultado es un banco de colores en el patio, que se inaugurará en primavera con una pequeña exposición de los trabajos.\n\nEl banco de colores se instalará en el patio con una placa que explica el trabajo del alumnado. Cada grupo firmó su pieza, y el día de la inauguración habrá una visita guiada para las familias.",
+      "galeria": [
+        {
+          "foto": "assets/demo/g2.svg"
+        },
+        {
+          "foto": "assets/demo/b1.svg"
+        }
+      ],
+      "enlaces": []
     }
   ]
 }

@@ -6,6 +6,7 @@
   "email": "correo@ejemplo.es",
   "menu_comedor": "Menú de noviembre: lentejas, pescado al horno, fruta de temporada. (Enlaza aquí al PDF.)",
   "libro_mes": "«El conejo curioso». Roque lo recomienda para 1º y 2º. Pídelo en la biblioteca.",
-  "calendario_texto": "Aquí va el calendario de Google: efemérides, reuniones y vacaciones.",
-  "buzon_texto": "¿Una idea o una queja? Escríbela en el formulario de sugerencias."
+  "calendario_texto": "",
+  "buzon_texto": "¿Una idea o una queja? Escríbela en el formulario de sugerencias.",
+  "calendario_google": "https://calendar.google.com/calendar/embed?src=c_6efb6e2788d88df4f8ebe8d40406b460d1cb217d877cb969852f0783a1d2c424%40group.calendar.google.com&ctz=UTC"
 }
