@@ -2,6 +2,16 @@
 <html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CEIP San Roque · Torredonjimeno</title>
+<meta name="description" content="CEIP San Roque, colegio público de Torredonjimeno (Jaén). Infantil y Primaria con las puertas abiertas: noticias, blog de aula, recursos y actividades.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CEIP San Roque · Torredonjimeno">
+<meta property="og:description" content="Un cole casi centenario de Torredonjimeno, con las puertas abiertas. Noticias, blog de aula y recursos.">
+<meta property="og:locale" content="es_ES">
+<meta name="theme-color" content="#0f3f73">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"School","name":"CEIP San Roque","description":"Colegio de Educación Infantil y Primaria en Torredonjimeno (Jaén).","address":{"@type":"PostalAddress","streetAddress":"C. Cristóbal Colón, 92","postalCode":"23650","addressLocality":"Torredonjimeno","addressRegion":"Jaén","addressCountry":"ES"},"telephone":"+34953366230","email":"correo@ejemplo.es"}
+</script>
 <style>
 :root{--azul:#1d5fa0;--cielo:#98b6e0;--noche:#0f3f73;--morado:#6b2fa0;--oro:#e8b93a;--crema:#fff9ec;--tinta:#1c2a3a;--rojo:#c0392b}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
@@ -49,6 +59,7 @@ footer{background:var(--noche);color:#dfe9f7;padding:28px 0;font-size:.95rem}foo
 @media(max-width:760px){.hero .wrap{grid-template-columns:1fr}nav{margin:0}}
 .hero-cta{text-align:center;margin-top:26px}.asig{color:var(--morado);margin:28px 0 8px}.unidad{background:#fff;color:var(--tinta);border-radius:12px;padding:12px 16px;margin:10px 0;border:2px solid var(--cielo)}.unidad h4{margin:0 0 6px;color:var(--noche);font-size:1.05rem}.ficha{display:block;padding:6px 0;font-weight:700}.card.cal{grid-column:1/-1}.cal iframe{width:100%;height:440px;border:0;border-radius:10px;margin-top:8px}.det-img{width:100%;max-width:640px;border-radius:14px;display:block;margin:16px 0}#det p{max-width:65ch}
 .galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin:12px 0 20px}.galeria img{width:100%;height:150px;object-fit:cover;border-radius:10px;display:block}
+.det-layout{display:grid;grid-template-columns:1fr 300px;gap:30px;align-items:start}.side .box{background:#fff;border:2px solid var(--cielo);border-radius:14px;padding:16px;margin-bottom:20px}.side iframe{width:100%;height:320px;border:0;border-radius:8px}.side h3{font-size:1.05rem;color:var(--noche)}.pn{display:flex;justify-content:space-between;gap:12px;margin-top:30px;border-top:1px dashed var(--cielo);padding-top:16px}.pn a{flex:1;color:var(--azul);font-weight:700;text-decoration:none;padding:8px 10px;border-radius:10px;background:#fff;border:2px solid var(--cielo)}.pn a.pn-next{text-align:right}.rel{margin-top:28px}.rel a{display:block;padding:8px 0;border-bottom:1px dashed var(--cielo);font-weight:700}@media(max-width:760px){.det-layout{grid-template-columns:1fr}}
 </style></head><body>
 <header><div class="wrap"><img src="assets/escudo.jpg" alt="Escudo del CEIP San Roque"><b>CEIP San Roque</b>
 <nav aria-label="Principal"><a href="#inicio">Inicio</a><a href="#novedades">Novedades</a><a href="#blog">Blog</a><a href="#programas">Programas</a><a href="#servicios">Servicios</a><a href="#docentes">Docentes</a><a href="#recursos">Recursos</a><a href="#familias">Familias</a></nav></div></header>
@@ -68,7 +79,7 @@ footer{background:var(--noche);color:#dfe9f7;padding:28px 0;font-size:.95rem}foo
 <section class="pg" id="p-noticias" hidden><div class="wrap"><p><a href="#inicio">← Volver al inicio</a></p><h2>Todas las noticias</h2><div class="chips"></div><input placeholder="Buscar…" aria-label="Buscar"><div class="lista"></div></div></section>
 <section class="pg" id="p-entradas" hidden><div class="wrap"><p><a href="#inicio">← Volver al inicio</a></p><h2>Todas las entradas del blog</h2><div class="chips"></div><input placeholder="Buscar…" aria-label="Buscar"><div class="lista"></div></div></section>
 
-<section class="pg" id="p-detalle" hidden><div class="wrap"><p><a href="#inicio">← Volver al inicio</a></p><div id="det"></div></div></section>
+<section class="pg" id="p-detalle" hidden><div class="wrap"><p><a href="#inicio">← Volver al inicio</a></p><div class="det-layout"><div id="det"></div><aside id="det-side" class="side"></aside></div></div></section>
 
 <section class="pg" id="p-recursos" hidden><div class="wrap"><p><a href="#inicio">← Volver al inicio</a></p><h2>Recursos</h2><div class="roque"><img src="assets/roque.png" alt="Roque"><div class="bocata" id="bocata"></div></div><p>Elige el curso:</p><div class="chips" id="cursos"></div><div id="rec-contenido"></div></div></section>
 
@@ -93,8 +104,15 @@ const miniatura=n=>n.imagen?`<img src="${H(n.imagen)}" alt="">`:H(n.emoji||"⭐"
 
 const tarjeta=(n,enlace)=>`<article class="post"><div class="ph">${miniatura(n)}</div><div class="t"><span class="etq">${H(n.etiqueta)} · ${fd(n.fecha)}</span><h3>${enlace?`<a href="${H(enlace)}">${H(n.titulo)}</a>`:H(n.titulo)}</h3><p>${H(n.resumen||(n.texto||"").slice(0,140))}</p></div></article>`;
 
-// tipo: "noticia" o "entrada"
 const listaDe=tipo=>L(D[tipo=="noticia"?"noticias":tipo=="entrada"?"blog":"avisos"]);
+
+// Dirección del calendario: acepta la dirección sola o el código <iframe> completo
+const extraeSrc=t=>{const m=(t||"").match(/src="([^"]+)"/);return m?m[1]:(t||"").trim()};
+function calendarioUrl(){
+  const A=D.ajustes||{};
+  const raw=A.calendario_google||(/<iframe/i.test(A.calendario_texto||"")?A.calendario_texto:"");
+  return raw?extraeSrc(raw):"";
+}
 
 function archivo(id,items,tipo){
   const p=$(id),ch=p.querySelector(".chips"),q=p.querySelector("input"),Lst=p.querySelector(".lista");let et="Todas";
@@ -114,21 +132,50 @@ function chips(el,vals,fn){
     b.onclick=()=>{el.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));fn(v)};el.append(b);if(i==0)b.click()});
 }
 
-// Página completa de una noticia o entrada: texto, galería y enlaces
+// Página completa de noticia o entrada: texto, galería, enlaces, anterior/siguiente y relacionadas
 function mostrarDetalle(tipo,i){
   let n=listaDe(tipo)[i];
   if(n&&tipo=="aviso") n={titulo:n.texto,fecha:n.fecha_limite,etiqueta:"Aviso",estado:"Portada",texto:n.detalle,enlace:n.enlace,emoji:"📢",galeria:[],enlaces:[]};
-  if(!n||n.estado=="Borrador"||(tipo!="aviso"&&n.fecha>HOY)){$("#det").innerHTML="<p>Esta página no está disponible.</p>";return}
+  if(!n||n.estado=="Borrador"||(tipo!="aviso"&&n.fecha>HOY)){$("#det").innerHTML="<p>Esta página no está disponible.</p>";$("#det-side").innerHTML="";return}
+
   const parrafos=t=>(t||"").split(/\n\s*\n/).filter(p=>p.trim()).map(p=>`<p>${H(p.trim())}</p>`).join("");
   const galeria=(n.galeria||[]).filter(g=>g&&g.foto).map(g=>`<a href="${H(g.foto)}" target="_blank" rel="noopener"><img src="${H(g.foto)}" alt=""></a>`).join("");
   const enlaces=(n.enlaces||[]).filter(e=>e&&e.url).map(e=>`<li><a href="${H(e.url)}" target="_blank" rel="noopener">${H(e.texto||e.url)}</a></li>`).join("");
+
+  // Anterior y siguiente dentro de la misma sección
+  const lista=visibles(listaDe(tipo));
+  const pos=lista.indexOf(lista.find(x=>x===listaDe(tipo)[i]));
+  const anterior=pos>=0?lista[pos+1]:null, siguiente=pos>0?lista[pos-1]:null;
+  const enlaceDe=x=>`#${tipo}=${listaDe(tipo).indexOf(x)}`;
+  const pn=(x,texto,dir)=>x?`<a class="pn-${dir}" href="${enlaceDe(x)}">${dir=="prev"?"← "+texto:texto+" →"}<br><small>${H(x.titulo)}</small></a>`:"<span></span>";
+
+  // Entradas relacionadas: misma etiqueta, o las más recientes si no hay
+  const otras=lista.filter(x=>x!==listaDe(tipo)[i]);
+  let rel=otras.filter(x=>x.etiqueta&&x.etiqueta==n.etiqueta).slice(0,3);
+  if(rel.length<3) rel=[...rel,...otras.filter(x=>!rel.includes(x)).slice(0,3-rel.length)];
+  const relHtml=rel.length?`<div class="rel"><h3>Entradas relacionadas</h3>${rel.map(x=>`<a href="${enlaceDe(x)}">${H(x.titulo)}</a>`).join("")}</div>`:"";
+
   $("#det").innerHTML=`<p class="etq">${H(n.etiqueta)} · ${fd(n.fecha)}</p>
     <h2>${H(n.emoji)} ${H(n.titulo)}</h2>
     ${n.imagen?`<img class="det-img" src="${H(n.imagen)}" alt="">`:""}
     ${parrafos(n.texto)||parrafos(n.resumen)}
     ${galeria?`<h3>Galería</h3><div class="galeria">${galeria}</div>`:""}
     ${enlaces?`<h3>Enlaces de interés</h3><ul>${enlaces}</ul>`:""}
-    ${n.enlace?`<p><a class="btn" href="${H(n.enlace)}" target="_blank" rel="noopener">Más información</a></p>`:""}`;
+    ${n.enlace?`<p><a class="btn" href="${H(n.enlace)}" target="_blank" rel="noopener">Más información</a></p>`:""}
+    <nav class="pn">${pn(anterior,"Anterior","prev")}${pn(siguiente,"Siguiente","next")}</nav>
+    ${tipo!="aviso"?relHtml:""}`;
+
+  // SEO: título y descripción de la página según la noticia o entrada abierta
+  document.title=`${n.titulo} · CEIP San Roque`;
+  const desc=document.querySelector('meta[name="description"]');
+  if(desc) desc.setAttribute("content",(n.resumen||(n.texto||"").slice(0,155)).slice(0,155));
+
+  // Columna lateral: calendario y contacto
+  const A=D.ajustes||{}, cal=calendarioUrl();
+  $("#det-side").innerHTML=`
+    ${cal?`<div class="box"><h3>🗓️ Calendario escolar</h3><iframe src="${H(cal)}" title="Calendario escolar" loading="lazy"></iframe></div>`:""}
+    <div class="box"><h3>📞 Contacto</h3><p>${H(A.direccion)}</p><p>Tel. ${H(A.telefono)}</p><p>${H(A.email)}</p></div>
+    <div class="box"><h3>📖 Libro del mes</h3><p>${H(A.libro_mes)}</p></div>`;
 }
 
 function route(){
@@ -179,7 +226,7 @@ cargar().then(()=>{
   $("#serv").innerHTML=L(D.servicios).map(s=>`<div class="card"><b style="font-size:1.6rem">${H(s.emoji)}</b><h3>${H(s.nombre)}</h3>${H(s.descripcion)}</div>`).join("");
 
   const DOC=L(D.docentes);
-  const dp=e=>$("#doc").innerHTML=DOC.filter(d=>e=="Todo el equipo"||d.etapa==e).map(d=>`<div class="card doc">${d.foto?`<img class="foto" src="${H(d.foto)}" alt="">`:`<i>${H(d.nombre[0])}</i>`}<b>${H(d.nombre)}</b><br>${H(d.cargo)}</div>`).join("");
+  const dp=e=>$("#doc").innerHTML=DOC.filter(d=>e=="Todo el equipo"||d.etapa==e).map(d=>`<div class="card doc">${d.foto?`<img class="foto" src="${H(d.foto)}" alt="">`:`<i>${H(d.nombre[0])}</i>`}<b>${H(d.nombre)}</b><br>${H(d.cargo).replace(/\n/g,"<br>")}</div>`).join("");
   chips($("#etapas"),["Todo el equipo",...new Set(DOC.map(d=>d.etapa))],dp);
 
   const FI=L(D.fichas), cu=[...new Set(FI.map(f=>f.curso))];
@@ -197,12 +244,9 @@ cargar().then(()=>{
   };
   chips($("#cursos"),cu,pintaCurso);
 
-  // Acepta la dirección sola o el código <iframe> completo, en cualquiera de los dos campos
-  const extraeSrc=t=>{const m=(t||"").match(/src="([^"]+)"/);return m?m[1]:(t||"").trim()};
-  const calRaw=A.calendario_google||(/<iframe/i.test(A.calendario_texto||"")?A.calendario_texto:"");
-  const calUrl=calRaw?extraeSrc(calRaw):"";
-  const famItems=[["🍽️","Menú del comedor",A.menu_comedor],["📖","Libro del mes de Roque",A.libro_mes],["🗓️","Calendario escolar",A.calendario_texto],["💬","Buzón de sugerencias",A.buzon_texto]].filter(c=>!(calUrl&&c[1]=="Calendario escolar"));
-  const calendario=calUrl?`<div class="card cal"><h3>🗓️ Calendario escolar</h3><iframe src="${H(calUrl)}" title="Calendario escolar" loading="lazy"></iframe></div>`:"";
+  const famItems=[["🍽️","Menú del comedor",A.menu_comedor],["📖","Libro del mes de Roque",A.libro_mes],["🗓️","Calendario escolar",A.calendario_texto],["💬","Buzón de sugerencias",A.buzon_texto]].filter(c=>!(calendarioUrl()&&c[1]=="Calendario escolar"));
+  const cal=calendarioUrl();
+  const calendario=cal?`<div class="card cal"><h3>🗓️ Calendario escolar</h3><iframe src="${H(cal)}" title="Calendario escolar" loading="lazy"></iframe></div>`:"";
   $("#fam").innerHTML=famItems.map(c=>`<div class="card"><b style="font-size:1.6rem">${c[0]}</b><h3>${c[1]}</h3>${H(c[2])}</div>`).join("")+calendario;
 
   route();

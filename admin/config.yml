@@ -4,8 +4,6 @@ backend:
   name: github
   repo: mariocb1/colesanroque
   branch: main
-  base_url: https://decap-proxy.mariocb12.workers.dev
-  auth_endpoint: auth
 
 media_folder: assets/uploads
 public_folder: /assets/uploads
@@ -177,7 +175,7 @@ collections:
             summary: "{{fields.nombre}}"
             fields:
               - {label: "Nombre", name: nombre, widget: string}
-              - {label: "Cargo", name: cargo, widget: string}
+              - {label: "Cargo (cada función en una línea)", name: cargo, widget: text}
               - label: "Etapa"
                 name: etapa
                 widget: select

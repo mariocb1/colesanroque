@@ -8,7 +8,7 @@
     },
     {
       "nombre": "Raquel",
-      "cargo": "Música y Jefa de Estudios",
+      "cargo": "Jefa de estudios\nMúsica",
       "etapa": "Equipo directivo",
       "foto": "assets/docentes/raquel.svg"
     },
@@ -38,7 +38,7 @@
     },
     {
       "nombre": "Paloma",
-      "cargo": "Tutora de 3º y Francés",
+      "cargo": "Tutora de 3º\nFrancés",
       "etapa": "Primaria",
       "foto": "assets/docentes/paloma.svg"
     },
@@ -56,13 +56,13 @@
     },
     {
       "nombre": "Alejandra",
-      "cargo": "Secretaría y tutora de 1º",
-      "etapa": "Primaria",
+      "cargo": "Secretaria\nTutora de 1º",
+      "etapa": "Equipo directivo",
       "foto": "assets/docentes/alejandra.svg"
     },
     {
       "nombre": "María del Pilar",
-      "cargo": "Tutora de 6º e Inglés",
+      "cargo": "Tutora de 6º\nInglés",
       "etapa": "Primaria",
       "foto": "assets/docentes/maria-del-pilar.svg"
     },
