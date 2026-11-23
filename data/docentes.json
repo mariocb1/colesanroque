@@ -19,6 +19,12 @@
       "foto": "assets/docentes/alejandra.svg"
     },
     {
+      "nombre": "Eva",
+      "cargo": "Tutora de 3 años",
+      "etapa": "Infantil",
+      "foto": "assets/docentes/eva.svg"
+    },
+    {
       "nombre": "Juani",
       "cargo": "Tutora de 4 años",
       "etapa": "Infantil",
@@ -29,12 +35,6 @@
       "cargo": "Tutora de 5 años",
       "etapa": "Infantil",
       "foto": "assets/docentes/maribel.svg"
-    },
-    {
-      "nombre": "Eva",
-      "cargo": "Tutora de 3 años",
-      "etapa": "Infantil",
-      "foto": "assets/docentes/eva.svg"
     },
     {
       "nombre": "Inmaculada",
