@@ -4,6 +4,8 @@ backend:
   name: github
   repo: mariocb1/colesanroque
   branch: main
+  base_url: https://decap-proxy.mariocb12.workers.dev
+  auth_endpoint: auth
 
 media_folder: assets/uploads
 public_folder: /assets/uploads
