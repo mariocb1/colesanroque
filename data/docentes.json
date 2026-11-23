@@ -13,6 +13,12 @@
       "foto": "assets/docentes/raquel.svg"
     },
     {
+      "nombre": "Alejandra",
+      "cargo": "Secretaria\nTutora de 1º",
+      "etapa": "Equipo directivo",
+      "foto": "assets/docentes/alejandra.svg"
+    },
+    {
       "nombre": "Juani",
       "cargo": "Tutora de 4 años",
       "etapa": "Infantil",
@@ -55,13 +61,7 @@
       "foto": "assets/docentes/asen.svg"
     },
     {
-      "nombre": "Alejandra",
-      "cargo": "Secretaria\nTutora de 1º",
-      "etapa": "Equipo directivo",
-      "foto": "assets/docentes/alejandra.svg"
-    },
-    {
-      "nombre": "María del Pilar",
+      "nombre": "Mapi",
       "cargo": "Tutora de 6º\nInglés",
       "etapa": "Primaria",
       "foto": "assets/docentes/maria-del-pilar.svg"
