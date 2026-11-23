@@ -2,7 +2,7 @@
   "items": [
     {
       "nombre": "Estefanía",
-      "cargo": "Directora",
+      "cargo": "Directora\nCiencias",
       "etapa": "Equipo directivo",
       "foto": "assets/docentes/estefania.svg"
     },
