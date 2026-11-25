@@ -67,7 +67,12 @@ footer{background:var(--noche);color:#dfe9f7;padding:28px 0;font-size:.95rem}foo
 
 <div id="home">
 <div class="hero" id="inicio"><div class="wrap"><div><h1 id="lema"></h1><p id="sub"></p></div><img src="assets/hero.png" alt="San Roque niño con su perro delante del colegio"></div><div class="hero-cta"><a class="btn" href="#recursos">Ir a los recursos</a></div></div>
-<div class="wrap"><div class="tablon"><div class="asoma"><img src="assets/roque.png" alt=""></div><h2 style="margin-top:14px">Avisos y plazos</h2><div id="avisos"></div></div></div>
+<div class="wrap"><div class="tablon"><div class="asoma"><img src="assets/roque.png" alt=""></div><h2 style="margin-top:14px">Avisos y plazos</h2><section class="wid" id="widgets"><div class="wrap wgrid">
+  <div class="wbox" id="w-izq"></div>
+  <div class="wbox wcal" id="w-cen"></div>
+  <div class="wbox" id="w-der"></div>
+</div></section>
+<div id="avisos"></div></div></div>
 <section id="novedades"><div class="wrap"><h2>Novedades</h2><div class="grid" id="nov"></div><p class="mas" id="mas-noticias" hidden><a class="btn" href="#noticias">Todas las noticias</a></p></div></section>
 <section class="azul" id="blog"><div class="wrap"><h2>Del blog de aula</h2><div class="grid" id="bl"></div><p class="mas" id="mas-entradas" hidden><a class="btn o" href="#entradas">Todas las entradas</a></p></div></section>
 <section id="programas"><div class="wrap"><h2>Planes y programas</h2><div id="prog"></div></div></section>
@@ -230,7 +235,7 @@ cargar().then(()=>{
   const dp=e=>$("#doc").innerHTML=DOC.filter(d=>e=="Todo el equipo"||d.etapa==e).map(d=>`<div class="card doc">${d.foto?`<img class="foto" src="${H(d.foto)}" alt="">`:`<i>${H(d.nombre[0])}</i>`}<b>${H(d.nombre)}</b><br>${H(d.cargo).replace(/\n/g,"<br>")}</div>`).join("");
   chips($("#etapas"),["Todo el equipo",...new Set(DOC.map(d=>d.etapa))],dp);
 
-  const FI=L(D.fichas), cu=[...new Set(FI.map(f=>f.curso))];
+  const FI=L(D.fichas), ORDEN_C=["3 años","4 años","5 años","1º","2º","3º","4º","5º","6º"], cu=[...new Set(FI.map(f=>f.curso))].sort((a,b)=>ORDEN_C.indexOf(a)-ORDEN_C.indexOf(b));
   const pintaCurso=c=>{
     $("#bocata").textContent=c.includes("año")?"¡Vamos a jugar y aprender!":"¡A por las fichas, campeones!";
     const fc=FI.filter(f=>f.curso==c);
@@ -249,6 +254,13 @@ cargar().then(()=>{
   const cal=calendarioUrl();
   const calendario=cal?`<div class="card cal"><h3>🗓️ Calendario escolar</h3><iframe src="${H(cal)}" title="Calendario escolar" loading="lazy"></iframe></div>`:"";
   $("#fam").innerHTML=famItems.map(c=>`<div class="card"><b style="font-size:1.6rem">${c[0]}</b><h3>${c[1]}</h3>${H(c[2])}</div>`).join("")+calendario;
+
+  // Widgets de la portada
+  const telLimpio=(A.telefono||"").replace(/\s/g,"");
+  $("#w-izq").innerHTML=`<h3>🍽️ Menú del comedor</h3><p>${H(A.menu_comedor)}</p><h3 style="margin-top:14px">📖 Libro del mes</h3><p>${H(A.libro_mes)}</p>`;
+  const urlAgenda=calendarioUrl();
+  $("#w-cen").innerHTML=urlAgenda?`<h3>🗓️ Próximos eventos</h3><iframe src="${H(urlAgenda+(urlAgenda.includes("mode=")?"":"&mode=AGENDA"))}" title="Calendario escolar" loading="lazy"></iframe>`:`<h3>🗓️ Próximos eventos</h3><p>Aquí aparecerá el calendario del colegio cuando se añada su dirección en Textos generales.</p>`;
+  $("#w-der").innerHTML=`<h3>📞 Contacto rápido</h3><p><a class="tel" href="tel:${H(telLimpio)}">${H(A.telefono)}</a></p><p>${H(A.email)}</p><p>${H(A.direccion)}</p>`;
 
   route();
 });
