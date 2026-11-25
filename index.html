@@ -64,6 +64,8 @@ footer{background:var(--noche);color:#efe8f8;padding:28px 0;font-size:.95rem}foo
 .marca{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}.marca img{height:46px;background:#fff;border-radius:6px;padding:2px}.post{position:relative;overflow:visible}.masc{position:absolute;height:64px;pointer-events:none;z-index:1}.m0{right:10px;top:-22px;transform:rotate(-8deg)}.m1{right:10px;top:-22px;transform:scaleX(-1) rotate(6deg)}.m2{right:6px;bottom:-14px;transform:rotate(12deg) scale(.85)}.m3{right:6px;bottom:-14px;transform:scaleX(-1) rotate(-10deg) scale(.85)}
 .pie-info{padding:34px 0;background:#efe8f8}.pgrid{display:grid;grid-template-columns:1.4fr 1fr;gap:20px;align-items:start}.pie-info .box{background:#fff;border:2px solid var(--cielo);border-radius:16px;padding:18px}.pie-info h3{margin:0 0 10px;color:var(--noche)}.pie-info iframe{width:100%;height:380px;border:0;border-radius:10px}.pie-info a.tel{font-weight:700;font-size:1.1rem;color:var(--morado)}@media(max-width:760px){.pgrid{grid-template-columns:1fr}}
 .marca img{width:auto!important;max-width:none!important;height:46px!important;object-fit:contain}
+.bloque{border-radius:20px;padding:16px 16px 6px;margin:18px 0;background:var(--bg);border:3px solid var(--bc)}.bloque .asig{color:var(--bc);margin:4px 0 10px}.bloque .unidad{background:#fff;border:2px solid var(--bc);border-radius:14px}
+.desc{display:block;font-weight:400;color:#3d4d5f;font-size:.95rem;margin:-4px 0 8px}
 </style></head><body>
 <header><div class="wrap"><a class="marca" href="#inicio"><img src="assets/soy-de-san-roque.png" alt="Logo del CEIP San Roque"><b>CEIP San Roque</b></a>
 <nav aria-label="Principal"><a href="#inicio">Inicio</a><a href="#novedades">Novedades</a><a href="#blog">Blog</a><a href="#programas">Programas</a><a href="#servicios">Servicios</a><a href="#docentes">Docentes</a><a href="#recursos">Recursos</a><a href="#familias">Familias</a></nav></div></header>
@@ -98,6 +100,11 @@ const ahora=new Date();
 const HOY=new URLSearchParams(location.search).get("hoy")||`${ahora.getFullYear()}-${String(ahora.getMonth()+1).padStart(2,"0")}-${String(ahora.getDate()).padStart(2,"0")}`;
 const fd=f=>f?new Date(f+"T12:00").toLocaleDateString("es-ES",{day:"numeric",month:"short",year:"numeric"}):"";
 const L=x=>(x&&x.items)||[];
+const COLOR_AREA={"Matemáticas":{c:"#603090",bg:"#f1eaf9"},"Lengua":{c:"#2f6fb3",bg:"#e9f1fb"},"Inglés":{c:"#c97d10",bg:"#fdf2e0"},
+ "Conocimiento del medio":{c:"#2e8b57",bg:"#e8f6ee"},"Música":{c:"#c2185b",bg:"#fce8f1"},"Plástica":{c:"#e67e22",bg:"#fdf0e6"},
+ "Educación Física":{c:"#16a085",bg:"#e6f7f4"},"Religión":{c:"#8e6b3c",bg:"#f5efe6"},"Francés":{c:"#5d6d7e",bg:"#eef1f4"},
+ "Números y cantidades":{c:"#603090",bg:"#f1eaf9"},"Letras":{c:"#2f6fb3",bg:"#e9f1fb"},"Colores y formas":{c:"#e67e22",bg:"#fdf0e6"}};
+const colorArea=a=>COLOR_AREA[a]||{c:"#603090",bg:"#f4f0fa"};
 let D={};
 
 const pide=n=>fetch("data/"+n+".json?v="+Date.now()).then(r=>r.json());
@@ -243,9 +250,9 @@ cargar().then(()=>{
     $("#rec-contenido").innerHTML=asig.map(a=>{
       const fa=fc.filter(f=>f.area==a);
       const unis=[...new Set(fa.map(f=>f.unidad||"General"))].sort((x,y)=>x=="General"?1:y=="General"?-1:x.localeCompare(y,"es",{numeric:true}));
-      return `<h3 class="asig">${H(a)}</h3>`+unis.map(u=>
-        `<div class="unidad"><h4>${H(u)}</h4>${fa.filter(f=>(f.unidad||"General")==u).map(f=>`<a class="ficha" href="${H(f.enlace)}" target="_blank" rel="noopener">${H(f.titulo)}</a>`).join("")}</div>`
-      ).join("");
+      return `<div class="bloque" style="--bc:${colorArea(a).c};--bg:${colorArea(a).bg}"><h3 class="asig">${H(a)}</h3>`+unis.map(u=>
+        `<div class="unidad"><h4>${H(u)}${(fa.find(f=>(f.unidad||"General")==u&&f.nombre_tema)||{}).nombre_tema?" · "+H(fa.find(f=>(f.unidad||"General")==u&&f.nombre_tema).nombre_tema):""}</h4>${fa.filter(f=>(f.unidad||"General")==u).map(f=>`<a class="ficha" href="${H(f.enlace)}" target="_blank" rel="noopener">${H(f.titulo)}</a>${f.descripcion?`<small class="desc">${H(f.descripcion)}</small>`:""}`).join("")}</div>`
+      ).join("")+"</div>";
     }).join("")||"<p>Todavía no hay recursos en este curso.</p>";
   };
   chips($("#cursos"),cu,pintaCurso);
