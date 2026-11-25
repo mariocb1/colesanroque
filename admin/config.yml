@@ -205,4 +205,8 @@ collections:
                 required: false
                 options: ["Tema 1", "Tema 2", "Tema 3", "Tema 4", "Tema 5", "Tema 6", "Tema 7", "Tema 8", "Tema 9", "Tema 10", "Tema 11", "Tema 12"]
               - {label: "Título", name: titulo, widget: string}
-              - {label: "Enlace al archivo o página", name: enlace, widget: string}
+              - label: "Archivo de la ficha (HTML)"
+                name: enlace
+                widget: file
+                media_folder: assets/fichas
+                public_folder: /assets/fichas
