@@ -210,15 +210,22 @@ collections:
                 name: curso
                 widget: select
                 options: ["3 años", "4 años", "5 años", "1º", "2º", "3º", "4º", "5º", "6º"]
-              - {label: "Asignatura o área", name: area, widget: string}
+              - label: "Asignatura o área"
+                name: area
+                widget: select
+                allow_add: true
+                options: ["Números y cantidades", "Letras", "Colores y formas", "Matemáticas", "Lengua", "Inglés", "Conocimiento del medio", "Música", "Educación Física", "Plástica", "Religión", "Francés"]
               - label: "Tema (opcional)"
                 name: unidad
                 widget: select
+                allow_add: true
                 required: false
                 options: ["Tema 1", "Tema 2", "Tema 3", "Tema 4", "Tema 5", "Tema 6", "Tema 7", "Tema 8", "Tema 9", "Tema 10", "Tema 11", "Tema 12"]
-              - {label: "Título", name: titulo, widget: string}
+              - {label: "Nombre del tema (opcional, ej: Los instrumentos)", name: nombre_tema, widget: string, required: false}
+              - {label: "Título de la ficha", name: titulo, widget: string}
+              - {label: "Descripción breve (opcional)", name: descripcion, widget: text, required: false}
               - label: "Archivo de la ficha (HTML)"
                 name: enlace
                 widget: file
-                media_folder: assets/fichas
+                media_folder: ../assets/fichas
                 public_folder: /assets/fichas
