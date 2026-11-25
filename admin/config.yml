@@ -39,6 +39,7 @@ collections:
           - label: "Configuración"
             name: items
             widget: list
+            add_to_top: true
             summary: "Desde {{fields.desde}}: {{fields.noticias}} noticias, {{fields.entradas}} entradas"
             fields:
               - {label: "Desde el día", name: desde, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
@@ -53,6 +54,7 @@ collections:
           - label: "Avisos"
             name: items
             widget: list
+            add_to_top: true
             summary: "{{fields.texto}}"
             fields:
               - {label: "Fecha límite", name: fecha_limite, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
@@ -69,6 +71,7 @@ collections:
           - label: "Noticias"
             name: items
             widget: list
+            add_to_top: true
             summary: "{{fields.titulo}}"
             fields:
               - {label: "Fecha", name: fecha, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
@@ -81,12 +84,14 @@ collections:
               - label: "Galería de fotos (opcional)"
                 name: galeria
                 widget: list
+                add_to_top: true
                 required: false
                 fields:
                   - {label: "Foto", name: foto, widget: image}
               - label: "Enlaces a otras webs (opcional)"
                 name: enlaces
                 widget: list
+                add_to_top: true
                 required: false
                 fields:
                   - {label: "Texto del enlace", name: texto, widget: string}
@@ -106,6 +111,7 @@ collections:
           - label: "Entradas"
             name: items
             widget: list
+            add_to_top: true
             summary: "{{fields.titulo}}"
             fields:
               - {label: "Fecha", name: fecha, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
@@ -115,12 +121,14 @@ collections:
               - label: "Galería de fotos (opcional)"
                 name: galeria
                 widget: list
+                add_to_top: true
                 required: false
                 fields:
                   - {label: "Foto", name: foto, widget: image}
               - label: "Enlaces a otras webs (opcional)"
                 name: enlaces
                 widget: list
+                add_to_top: true
                 required: false
                 fields:
                   - {label: "Texto del enlace", name: texto, widget: string}
@@ -142,6 +150,7 @@ collections:
           - label: "Programas"
             name: items
             widget: list
+            add_to_top: true
             summary: "{{fields.nombre}}"
             fields:
               - {label: "Nombre", name: nombre, widget: string}
@@ -160,6 +169,7 @@ collections:
           - label: "Servicios"
             name: items
             widget: list
+            add_to_top: true
             summary: "{{fields.nombre}}"
             fields:
               - {label: "Nombre", name: nombre, widget: string}
@@ -174,6 +184,7 @@ collections:
           - label: "Docentes"
             name: items
             widget: list
+            add_to_top: true
             summary: "{{fields.nombre}}"
             fields:
               - {label: "Nombre", name: nombre, widget: string}
@@ -192,6 +203,7 @@ collections:
           - label: "Fichas"
             name: items
             widget: list
+            add_to_top: true
             summary: "{{fields.titulo}}"
             fields:
               - label: "Curso"
